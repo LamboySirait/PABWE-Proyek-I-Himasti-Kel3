@@ -15,4 +15,4 @@ NB: xxxx merupakan link repo hasil forking tadi
 
 - Masuk kedalam folder dan buka terminal, ketikkan npm install, tunggu hingga node_module sudah terinstall
 - Jalankan website dengan npm start
-daw
+dawddwa
