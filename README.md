@@ -9,8 +9,9 @@ Anggota Kelompok:
 
 Langkah-Langkah berkontribusi pada proyek ini:
 - Forking proyek ini yang berada di sudut kanan atas
-
-- Kemudian Clone proyek ini dengan meng copy link code https://github.com/ifs20032-itdel/PABWE-Proyek-I-Himasti-Kel3.git kemudian, buka folder komputer dan buka console / CMD kemudian ketikkan git clone https://github.com/ifs20032-itdel/PABWE-Proyek-I-Himasti-Kel3.git  kemudian enter
+- Kemudian masuk ke repo anda yang telah di forking
+- Kemudian Clone proyek ini dengan meng copy link code https://github.com/xxxx.git kemudian, buka folder komputer dan buka console / CMD kemudian ketikkan git clone https://github.com/xxxx.git  kemudian enter
+NB: xxxx merupakan link repo hasil forking tadi
 
 - Masuk kedalam folder dan buka terminal, ketikkan npm install, tunggu hingga node_module sudah terinstall
 - Jalankan website dengan npm start
