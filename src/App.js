@@ -1,50 +1,35 @@
-// import logo from './logo.svg';
 import './App.css';
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import NavigationBar from './components/NavigationBar';
-
-// import Tentang from './pages/Tentang'
-// import Beranda from './pages/Home'
+import AOS from 'aos'
 import Home from './pages/Home';
+import Footer from './components/Footer'
+import Main from './components/Main'
+import 'aos/dist/aos.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
-  return (
-    <div className="App">
-      <div >
-          <NavigationBar />
-      </div>
+    AOS.init()
+    return (
+        <div className="App">
+            {/* <BrowserRouter> */}
 
-      <div id='MainContent' style={{height: '1500px'}}>
-          <Home/>
+            <NavigationBar/>
 
-        {/* <Carousel>
-          <CarouselItem>
-            <div style={{height: '500px', backgroundColor: 'blue'}}>
-
-            </div> 
-          </CarouselItem> 
-          <CarouselItem>
-            <div style={{height: '500px', backgroundColor: 'yellow'}}></div>
-
-          </CarouselItem>
-
-        </Carousel> */}
-
-      </div>
+            {/* <Home />
       
-      <div>
+            <Footer /> */}
+            
+            <Routes>
 
-        <div className='bg-dark'>
-          <p className='text-white'>dawda</p>
+                <Route path='/' element={<Home />}/>
+                <Route path='/tentang' element={<Main />}/>
+
+            </Routes>
+            {/* </BrowserRouter> */}
+
+            <Footer />
         </div>
-
-        <div className='container-fluid p-1 bg-white align-middle border-5' >
-            <p className='border align-middle'>Copyright</p>
-        </div>
-
-      </div>
-    </div>
-  );
+    );
 }
 
 export default App;
