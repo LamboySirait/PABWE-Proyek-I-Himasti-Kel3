@@ -1,26 +1,37 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import location from './img/location.svg'
+import Location from "./img/location.svg";
+import Mail from "./img/mail.svg"
+import Call from "./img/call.svg"
+import Instagram from "./img/instagram.svg"
 
 const Footer = () => {
   return (
     <div className="">
       <div className="bg-dark text-white" style={{}}>
         <Container style={{ width: "1300px" }}>
-          <Row style={{ height: "100px", border: '1px solid' }}>
+          <Row style={{ height: "200px", border: "1px solid" }}>
             <Col>
-              <div className='border'>
-                <h3>Hubungi Kami</h3>
-                <div className='text-start border'>
-                  <img src={location} alt="gambar" width='30px' />
-                  <p>JL. P.I. Del, Sitoluama, Laguboti,</p>
+              <div className="mt-4 border">
+                <h3 className="mb-4">Hubungi Kami</h3>
+                <div className='d-flex'>
+                  <img src={Location} alt="gambar" width='15px' />
+                  <p className="m-auto" style={{fontSize: '13px'}}>JL. P.I. Del, Sitoluama, Laguboti, Toba Samosir, Sumatera Utara</p>
+                </div>
+                <div className='d-flex mt-1'>
+                  <img src={Mail} alt="gambar" width='15px' />
+                  <p style={{fontSize: '13px', marginRight: 'auto', marginTop: 'auto', marginBottom: 'auto', marginLeft: '10px'}}>informatika@del.ac.id</p>
+                </div>
+                <div className='d-flex mt-1'>
+                  <img src={Call} alt="gambar" width='15px' />
+                  <p style={{fontSize: '13px', marginRight: 'auto', marginTop: 'auto', marginBottom: 'auto', marginLeft: '10px'}}>+6281260388185</p>
                 </div>
               </div>
             </Col>
             <Col>
-              <div>
-                <h3>Media Sosial</h3>
+              <div className="mt-4 border">
+                <img src={Instagram} alt="" />
               </div>
             </Col>
             <Col>

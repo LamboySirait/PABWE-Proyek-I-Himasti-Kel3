@@ -15,7 +15,9 @@ const NavigationBar = () => {
       >
         <Container>
           <NavbarBrand style={{ float: "left" }}>
-            <img src={Logo} alt="" width="50px" />
+            <NavLink href="/">
+              <img src={Logo} alt="Himasti" width="50px" />
+            </NavLink>
           </NavbarBrand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
