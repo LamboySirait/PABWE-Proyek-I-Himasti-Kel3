@@ -1,38 +1,28 @@
-// import logo from './logo.svg';
 import "./App.css";
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import NavigationBar from "./components/NavigationBar";
-import Divisi from "./pages/Divisi";
+import AOS from "aos";
 import Home from "./pages/Home";
-import Bph from "./pages/Bph";
+import Footer from "./components/Footer";
+import Main from "./components/Main";
+import "aos/dist/aos.css";
+import { Routes, Route } from "react-router-dom";
+import Prestasi from "./pages/Prestasi";
+import DivKominfo from "./pages/DivKominfo";
 
-// import Tentang from './pages/Tentang'
 function App() {
+  AOS.init();
   return (
     <div className="App">
-      <div>
-        <NavigationBar />
-      </div>
-      <div>
-        <Home />
-      </div>
+      <NavigationBar />
 
-      <div>
-        <Bph />
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/tentang" element={<Main />} />
+        <Route path="/prestasi" element={<Prestasi />} />
+        <Route path="/kominfo" element={<DivKominfo />} />
+      </Routes>
 
-      <div>
-        <Divisi />
-      </div>
-      <div>
-        <div className="bg-dark">
-          <p className="text-white">dawda</p>
-        </div>
-
-        <div className="container-fluid p-1 bg-white align-middle border-5">
-          <p className="border align-middle">Copyright</p>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 }
