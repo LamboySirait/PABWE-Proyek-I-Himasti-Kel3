@@ -7,6 +7,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
+import Divisi from "./Divisi";
+import BPH from "./Bph";
 
 const Home = () => {
   return (
@@ -86,6 +88,11 @@ const Home = () => {
             </h1>
           </div>
         </div>
+      </div>
+
+      <div>
+        <Divisi />
+        <BPH />
       </div>
 
       <div className="d-flex" data-aos="fade-up">
