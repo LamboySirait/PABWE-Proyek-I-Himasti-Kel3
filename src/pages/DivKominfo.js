@@ -1,33 +1,26 @@
 import { Col, Container, Image, Row } from "react-bootstrap";
 import Dian from "./../components/img/DivKominfo/Dian.png";
-import Amel from "./../components/img/DivKominfo/amelia.jpeg";
-import Cheilint from "./../components/img/DivKominfo/cheilint.jpeg";
-import Theresia from "./../components/img/DivKominfo/theresia.jpeg";
-import Rutha from "./../components/img/DivKominfo/rutha.jpeg"; 
-import Gerald from "./../components/img/DivKominfo/gerald.jpeg"; 
-import Jay from "./../components/img/DivKominfo/jayfline.jpeg";
-import Dastin from "./../components/img/DivKominfo/dastin.jpeg";
 
 const DivKominfo = () => {
   return (
     <div style={{ marginTop: "75px" }}>
-      <div className="text-white border" style={{ height: "500px" }}>
+      <div className="text-white border  " style={{ height: "500px" }}>
         <h1>Kominfo</h1>
       </div>
       <div className="text-white mb-5">
         <h1>Anggota</h1>
-        <Container>
+        <Container className="">
           <Row className="mt-5">
             <Col>
               <div>
-                <Image src={Dian} roundedCircle style={{ width: "150px" }} />
+                <img src={Dian} className="rounded-circle" alt="Dian" style={{ width: "150px" }} />
                 <h5>Dian Jorgy Gultom</h5>
                 <p>Ketua</p>
               </div>
             </Col>
-            <Col>
+            <Col style={{position: 'relative'}}>
               <div>
-                <Image src={Amel} roundedCircle style={{ width: "150px" }} />
+                <Image src={Dian} roundedCircle style={{ width: "150px" }} />
                 <h5>Amelia Agustina Hutajulu</h5>
                 <p>Wakil Ketua</p>
               </div>
