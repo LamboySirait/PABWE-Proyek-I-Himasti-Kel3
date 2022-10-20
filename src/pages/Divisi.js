@@ -1,10 +1,10 @@
 import { Row, Col, Container, Button } from "react-bootstrap";
-import Kominfo from "../components/img/kominfo.webp";
-import Humas from "../components/img/sosial.jpg";
-import Danus from "../components/img/danausaha.png";
-import Pendidikan from "../components/img/pendidikan.png";
-import Ristek from "../components/img/teknologi.avif";
-import Seni from "../components/img/sosial.jpg";
+import Kominfo from "../components/img/logo/kominfo.webp";
+import Humas from "../components/img/logo/sosial.jpg";
+import Danus from "../components/img/logo/danausaha.png";
+import Pendidikan from "../components/img/logo/pendidikan.png";
+import Ristek from "../components/img/logo/teknologi.avif";
+import Seni from "../components/img/logo/sosial.jpg";
 
 
 const Divisi = () => {

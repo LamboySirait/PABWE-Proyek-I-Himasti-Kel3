@@ -1,13 +1,13 @@
 import React from "react";
 import { Navbar, Container, Nav, NavLink, NavbarBrand } from "react-bootstrap";
-import Logo from "./img/LogoHimasti.png";
+import Logo from "./img/logo/LogoHimasti.png";
 
 const NavigationBar = () => {
   return (
     <div style={{ backgroundColor: "#FFFFFF" }} className="fixed-top">
       <Navbar
         expand="lg"
-        className="m-auto d-flex border classes.appBarTransparent"
+        className="m-auto d-flex border"
         style={{
           width: "auto",
           display: "flex",

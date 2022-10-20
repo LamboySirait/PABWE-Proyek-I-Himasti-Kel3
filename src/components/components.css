@@ -1,8 +1,11 @@
-#footer .bg-dark {
+/* ===== Footer.js ===== */
+#footer .bg-dark .container .row{
     color: white;
+    height: 200px;
 }
 
 #footer .bg-white div {
     height: 50px;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
 }

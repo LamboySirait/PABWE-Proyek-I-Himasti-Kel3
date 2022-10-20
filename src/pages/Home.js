@@ -1,6 +1,6 @@
-import { Button, Card, CardGroup, Carousel, CarouselItem, NavLink } from "react-bootstrap";
+import { Button, Card, CardGroup, Carousel, CarouselItem, NavLink, Nav } from "react-bootstrap";
 import Tanoto from "./../components/img/tanoto.jpg";
-import Logo from "./../components/img/LogoHimasti.png";
+import Logo from "./../components/img/logo/LogoHimasti.png";
 import Gambar from "./../components/img/Gambar1.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -9,9 +9,10 @@ import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
 import Divisi from "./Divisi";
 import BPH from "./Bph";
-import Feedback from "./../components/img/feedback.svg"
+import Feedback from "./../components/img/icon/feedback.svg"
 import React, {useState} from "react";
 import GiveFeedback from "../components/GiveFeedback";
+
 
 const Home = () => {
   const [showFeed, setShowFeed] = useState(false)
@@ -47,10 +48,10 @@ const Home = () => {
 
       <div className="d-flex">
         <div className="mt-5 m-auto" style={{ width: "90%" }}>
-          <h1 className="text-white" data-aos="fade-up">
+          <h1 className="text-white" >
             Tentang Himasti
           </h1>
-          <div className="d-flex m-5" data-aos="fade-up">
+          <div className="d-flex m-5" >
             <img className="m-lg-3" src={Logo} alt="" width="300px" />
             <div
               className="text-white m-lg-3 d-flex"
@@ -63,7 +64,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="d-flex m-5 text-white" data-aos="fade-up">
+          <div className="d-flex m-5 text-white" >
             <h1 className="m-lg-5" style={{ fontSize: "100px" }}>
               Visi
             </h1>
@@ -73,7 +74,7 @@ const Home = () => {
               potensi lokal bagi kemajuan bangsa pada tahun 2023.
             </p>
           </div>
-          <div className="d-flex m-5 text-white text-start" data-aos="fade-up">
+          <div className="d-flex m-5 text-white text-start" >
             <ul className="m-lg-5">
               <li>
                 Menyelenggarakan pendidikan teknik informatika yang bermutu,
@@ -97,7 +98,7 @@ const Home = () => {
 
       <Divisi />
 
-      <div className="d-flex" data-aos="fade-up">
+      <div className="d-flex" >
         <div
           className="text-white mt-5 m-auto border"
           style={{ width: "90%" }}

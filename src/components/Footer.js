@@ -1,21 +1,21 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Location from "./img/location.svg";
-import Mail from "./img/mail.svg"
-import Call from "./img/call.svg"
-import Instagram from "./img/instagram.svg"
+import Location from "./img/icon/location.svg";
+import Mail from "./img/icon/mail.svg"
+import Call from "./img/icon/call.svg"
+import Instagram from "./img/icon/instagram.svg"
+import Youtube from "./img/icon/youtube.svg"
+import Facebook from "./img/icon/facebook.svg"
+import Del from "./img/logo/itdel.png"
 import "./components.css"
-import Youtube from "./img/youtube.svg"
-import Facebook from "./img/facebook.svg"
-import Del from "./img/itdel.png"
 
 const Footer = () => {
   return (
     <div id="footer">
-      <div className="bg-dark" style={{width: '100%'}} >
-        <Container style={{ width: "90%" }}>
-          <Row style={{ height: "200px"}}>
+      <div className="bg-dark">
+        <Container className="container">
+          <Row className="row">
             <Col>
               <div className="mt-4">
                 <h3 className="mb-4">Hubungi Kami</h3>
@@ -53,7 +53,7 @@ const Footer = () => {
       <div
         className="bg-white d-flex"
       >
-        <div style={{ width: "95%", margin: "0 auto" }}>
+        <div>
           <p
             className="mx-auto"
             style={{
