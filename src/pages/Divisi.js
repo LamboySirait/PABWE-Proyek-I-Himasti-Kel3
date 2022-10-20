@@ -5,6 +5,7 @@ import Ristek from "../components/img/riset.png";
 import Kominfo from "../components/img/minfo.png";
 import Humas from "../components/img/relation.png";
 import Danus from "../components/img/dana.png";
+import Minat from "../components/img/bakat.png";
 
 
 const Divisi = () => {
@@ -183,7 +184,7 @@ const Divisi = () => {
               >
                 <img
                   className="m-lg-3 rounded-circle justify-content-center"
-                  src={Logo}
+                  src={Minat}
                   alt=""
                   width="100px"
                 />

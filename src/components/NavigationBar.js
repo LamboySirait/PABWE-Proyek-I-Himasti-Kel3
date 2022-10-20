@@ -20,7 +20,7 @@ const NavigationBar = () => {
               </NavLink>
           </NavbarBrand>
           <Nav style={{marginLeft: '-19px'}}>
-            <NavLink href="/">Himpunan Mahasiswa Informatika</NavLink>
+            <NavLink href="/" style={{fontFamily: 'Droid Sans Bold',fontSize:25}}>Himpunan Mahasiswa Informatika</NavLink>
           </Nav>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

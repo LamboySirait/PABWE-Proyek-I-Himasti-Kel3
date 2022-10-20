@@ -2,6 +2,8 @@ import { Button, Card, CardGroup, Carousel, CarouselItem, NavLink } from "react-
 import Tanoto from "./../components/img/tanoto.jpg";
 import Logo from "./../components/img/LogoHimasti.png";
 import Gambar from "./../components/img/Gambar1.jpg";
+import Daftar from "./../components/img/pendaftaran.jpg";
+import Wisuda from "./../components/img/wisuda.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -17,7 +19,7 @@ const Home = () => {
   const [showFeed, setShowFeed] = useState(false)
 
   return (
-    <div style={{ marginTop: "75px" }} >
+    <div style={{ marginTop: "50px" }} >
       <div>
         <Carousel
           className="justify-content-center m-auto"
@@ -27,7 +29,7 @@ const Home = () => {
             style={{
               height: "90vh",
               backgroundImage: `url(${Tanoto})`,
-              opacity: "50%",
+              opacity: "100%",
             }}
           >
             <h1 className="text-white text-center">SYALALALALALA</h1>
@@ -127,61 +129,61 @@ const Home = () => {
             <CardGroup>
               <SwiperSlide style={{ width: "auto" }}>
                 <Card className="text-dark">
-                  <Card.Img src={Logo} style={{ height: "200px" }} />
+                  <Card.Img src={Daftar} style={{ height: "200px" }} />
                   <Card.Body>
-                    <Card.Title>1. Pengangkatan Ketua Himasti</Card.Title>
-                    <Card.Text>Syalalalalallalla lalal alala lah</Card.Text>
+                    <Card.Title>Penerimaan Mahasiswa Baru Informatika</Card.Title>
+                    <Card.Text>IT Del kembali menerima angkatan baru mahasiswa program studi informatika tahun ajaran 2023/2024...</Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <small>Dari Anggota Himasti</small>
+                    <small>Baca Selengkapnya</small>
                   </Card.Footer>
                 </Card>
               </SwiperSlide>
               <SwiperSlide style={{ width: "auto" }}>
                 <Card className="text-dark">
-                  <Card.Img src={Logo} style={{ height: "200px" }} />
+                  <Card.Img src={Wisuda} style={{ height: "200px" }} />
                   <Card.Body>
-                    <Card.Title>2. Pengangkatan Ketua Himasti</Card.Title>
-                    <Card.Text>Syalalalalallalla lalal alala lah</Card.Text>
+                    <Card.Title>Wisuda XIX IT Del</Card.Title>
+                    <Card.Text>Sabtu 15 Oktober 2022 Institut Teknologi Del melaksanakan Wisuda untuk 369 Mahasiswa. Dihadiri Bapak Prof. Yasonna Hamonangan Laoly, S.H., M.Sc., Ph.D...</Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <small>Dari Anggota Himasti</small>
+                    <small>Baca Selengkapnya</small>
                   </Card.Footer>
                 </Card>
               </SwiperSlide>
               <SwiperSlide style={{ width: "auto" }}>
-                <Card className="text-dark">
-                  <Card.Img src={Logo} style={{ height: "200px" }} />
+              <Card className="text-dark">
+                  <Card.Img src={Daftar} style={{ height: "200px" }} />
                   <Card.Body>
-                    <Card.Title>3. Pengangkatan Ketua Himasti</Card.Title>
-                    <Card.Text>Syalalalalallalla lalal alala lah</Card.Text>
+                    <Card.Title>Penerimaan Mahasiswa Baru Informatika</Card.Title>
+                    <Card.Text>IT Del kembali menerima angkatan baru mahasiswa program studi informatika tahun ajaran 2023/2024...</Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <small>Dari Anggota Himasti</small>
+                    <small>Baca Selengkapnya</small>
                   </Card.Footer>
                 </Card>
               </SwiperSlide>
               <SwiperSlide style={{ width: "auto" }}>
-                <Card className="text-dark">
-                  <Card.Img src={Logo} style={{ height: "200px" }} />
+              <Card className="text-dark">
+                  <Card.Img src={Wisuda} style={{ height: "200px" }} />
                   <Card.Body>
-                    <Card.Title>4. Pengangkatan Ketua Himasti</Card.Title>
-                    <Card.Text>Syalalalalallalla lalal alala lah</Card.Text>
+                    <Card.Title>Wisuda XIX IT Del</Card.Title>
+                    <Card.Text>Sabtu 15 Oktober 2022 Institut Teknologi Del melaksanakan Wisuda untuk 369 Mahasiswa. Dihadiri Bapak Prof. Yasonna Hamonangan Laoly, S.H., M.Sc., Ph.D...</Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <small>Dari Anggota Himasti</small>
+                    <small>Baca Selengkapnya</small>
                   </Card.Footer>
                 </Card>
               </SwiperSlide>
               <SwiperSlide style={{ width: "auto" }}>
-                <Card className="text-dark">
-                  <Card.Img src={Logo} style={{ height: "200px" }} />
+              <Card className="text-dark">
+                  <Card.Img src={Daftar} style={{ height: "200px" }} />
                   <Card.Body>
-                    <Card.Title>5. Pengangkatan Ketua Himasti</Card.Title>
-                    <Card.Text>Syalalalalallalla lalal alala lah</Card.Text>
+                    <Card.Title>Penerimaan Mahasiswa Baru Informatika</Card.Title>
+                    <Card.Text>IT Del kembali menerima angkatan baru mahasiswa program studi informatika tahun ajaran 2023/2024...</Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <small>Dari Anggota Himasti</small>
+                    <small>Baca Selengkapnya</small>
                   </Card.Footer>
                 </Card>
               </SwiperSlide>
