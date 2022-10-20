@@ -1,0 +1,8 @@
+#footer .bg-dark {
+    color: white;
+}
+
+#footer .bg-white div {
+    height: 50px;
+    width: 100%;
+}

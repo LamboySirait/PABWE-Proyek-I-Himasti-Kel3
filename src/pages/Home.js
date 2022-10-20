@@ -1,4 +1,4 @@
-import { Card, CardGroup, Carousel, CarouselItem } from "react-bootstrap";
+import { Button, Card, CardGroup, Carousel, CarouselItem, NavLink } from "react-bootstrap";
 import Tanoto from "./../components/img/tanoto.jpg";
 import Logo from "./../components/img/LogoHimasti.png";
 import Gambar from "./../components/img/Gambar1.jpg";
@@ -9,10 +9,15 @@ import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
 import Divisi from "./Divisi";
 import BPH from "./Bph";
+import Feedback from "./../components/img/feedback.svg"
+import React, {useState} from "react";
+import GiveFeedback from "../components/GiveFeedback";
 
 const Home = () => {
+  const [showFeed, setShowFeed] = useState(false)
+
   return (
-    <div style={{ marginTop: "75px" }}>
+    <div style={{ marginTop: "75px" }} >
       <div>
         <Carousel
           className="justify-content-center m-auto"
@@ -31,7 +36,7 @@ const Home = () => {
             style={{
               height: "90vh",
               backgroundImage: `url(${Gambar})`,
-              backgroundSize: " 90vh",
+              backgroundSize: "1550px",
               opacity: "50%",
             }}
           >
@@ -41,7 +46,7 @@ const Home = () => {
       </div>
 
       <div className="d-flex">
-        <div className="mt-5 m-auto border" style={{ width: "1300px" }}>
+        <div className="mt-5 m-auto" style={{ width: "90%" }}>
           <h1 className="text-white" data-aos="fade-up">
             Tentang Himasti
           </h1>
@@ -90,15 +95,12 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div> */}
       <Divisi />
-        {/* <BPH />
-      </div> */}
 
       <div className="d-flex" data-aos="fade-up">
         <div
           className="text-white mt-5 m-auto border"
-          style={{ width: "1300px" }}
+          style={{ width: "90%" }}
         >
           <div className="d-flex">
             <h1 style={{ margin: "0" }}>Berita Himasti</h1>
@@ -114,7 +116,7 @@ const Home = () => {
           </div>
 
           <Swiper
-            style={{ marginTop: "40px", height: "400px", minWidth: "700px" }}
+            style={{ marginTop: "40px", height: "400px", minWidth: "50%" }}
             className="mySwiper"
             spaceBetween={50}
             slidesPerView={3}
@@ -194,8 +196,16 @@ const Home = () => {
           style={{ height: "500px", width: "1300px" }}
         ></div>
       </div>
+      
+      <NavLink onClick={() => setShowFeed(!showFeed)}>
+        <img src={Feedback} alt="" style={{position: 'fixed', bottom: '7%', right: '1%', zIndex: '5'}} />
+      </NavLink>
+
+      {showFeed ? <GiveFeedback /> : null}
+
+
     </div>
   );
-};
+}
 
 export default Home;

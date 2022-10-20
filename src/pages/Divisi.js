@@ -5,8 +5,8 @@ const Divisi = () => {
   return (
     <div
       id="MainContent"
-      className="mt-5 border justify-content-center m-auto"
-      style={{ height: "1500px", width: "100%" }}
+      className="mt-5 justify-content-center m-auto"
+      style={{width: '90%'}}
     >
       <div>
         <h1 className="text-white justify-content-center">Divisi</h1>

@@ -5,19 +5,20 @@ import Location from "./img/location.svg";
 import Mail from "./img/mail.svg"
 import Call from "./img/call.svg"
 import Instagram from "./img/instagram.svg"
+import "./components.css"
 
 const Footer = () => {
   return (
-    <div className="">
-      <div className="bg-dark text-white" style={{}}>
-        <Container style={{ width: "1300px" }}>
-          <Row style={{ height: "200px", border: "1px solid" }}>
+    <div id="footer">
+      <div className="bg-dark" style={{width: '100%'}} >
+        <Container style={{ width: "90%" }}>
+          <Row style={{ height: "200px"}}>
             <Col>
-              <div className="mt-4 border">
+              <div className="mt-4">
                 <h3 className="mb-4">Hubungi Kami</h3>
                 <div className='d-flex'>
                   <img src={Location} alt="gambar" width='15px' />
-                  <p className="m-auto" style={{fontSize: '13px'}}>JL. P.I. Del, Sitoluama, Laguboti, Toba Samosir, Sumatera Utara</p>
+                  <p style={{fontSize: '13px', marginRight: 'auto', marginTop: 'auto', marginBottom: 'auto', marginLeft: '10px'}}>JL. P.I. Del, Sitoluama, Laguboti, Toba Samosir, Sumatera Utara</p>
                 </div>
                 <div className='d-flex mt-1'>
                   <img src={Mail} alt="gambar" width='15px' />
@@ -45,9 +46,8 @@ const Footer = () => {
 
       <div
         className="bg-white d-flex"
-        style={{ height: "50px", width: "auto" }}
       >
-        <div style={{ width: "1300px", margin: "0 auto" }} className="border">
+        <div style={{ width: "95%", margin: "0 auto" }}>
           <p
             className="mx-auto"
             style={{
@@ -59,7 +59,7 @@ const Footer = () => {
             Copyright &#169; 2022 Himasti IT Del. All rights reserved.
           </p>
 
-          <p style={{ float: "right", transform: "translateY(50%)" }}>
+          <p id="dd" style={{ float: "right", transform: "translateY(50%)" }}>
             Created by Kelompok 3
           </p>
         </div>
