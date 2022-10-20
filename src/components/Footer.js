@@ -8,15 +8,16 @@ import Instagram from "./img/icon/instagram.svg"
 import Youtube from "./img/icon/youtube.svg"
 import Facebook from "./img/icon/facebook.svg"
 import Del from "./img/logo/itdel.png"
+import LogoHimasti from "./img/logo/LogoHimasti.png"
 import "./components.css"
 
 const Footer = () => {
   return (
     <div id="footer">
-      <div className="bg-dark">
-        <Container className="container">
-          <Row className="row">
-            <Col>
+      <div className="bg-white " style={{height: '30vh'}}>
+        <Container className="container border" style={{marginTop: "1vh"}}>
+          <Row className="row border" style={{marginTop: '0 auto', marginBottom: ''}}>
+            <Col className="border" >
               <div className="mt-4">
                 <h3 className="mb-4">Hubungi Kami</h3>
                 <div className='d-flex'>
@@ -35,23 +36,21 @@ const Footer = () => {
             </Col>
             <Col>
               <div className="mt-4 border">
-                <h3 className="mb-4">Social Media</h3>
-                <img src={Instagram} alt="" width="30px" />
-                <img src={Youtube} alt="" width="30px" />
-                <img src={Facebook} alt="" width="30px" />
+                <img src={Instagram} alt="Instagram Himasti" width="50px" />
+                <img src={Youtube} alt="" width="60px" />
+                <img src={Facebook} alt="" width="50px" />
               </div>
             </Col>
-            <Col>
-              <div style={{ marginTop: "25px" }}>
-                <img src={Del} alt="" width="150px" />
-              </div>
+            <Col className="border">
+                <img src={LogoHimasti} alt="" width="150px" className="mt-4 border"/>
+                
             </Col>
           </Row>
         </Container>
       </div>
 
-      <div
-        className="bg-white d-flex"
+      <div id="copyright"
+        className="bg-dark d-flex"
       >
         <div>
           <p

@@ -1,193 +1,118 @@
-import { Row, Col, Container, Button } from "react-bootstrap";
+import { Row, Col, Container, Button, NavLink } from "react-bootstrap";
 import Kominfo from "../components/img/logo/kominfo.webp";
 import Humas from "../components/img/logo/sosial.jpg";
 import Danus from "../components/img/logo/danausaha.png";
 import Pendidikan from "../components/img/logo/pendidikan.png";
 import Ristek from "../components/img/logo/teknologi.avif";
 import Seni from "../components/img/logo/sosial.jpg";
+// =======
+import Logo2 from "../components/img/logo/LogoHimasti.png";
+import Pendidikan2 from "../components/img/logo/pendidikan.png";
+import Ristek2 from "../components/img/riset.png";
+import Kominfo2 from "../components/img/minfo.png";
+import Humas2 from "../components/img/relation.png";
+import Danus2 from "../components/img/dana.png";
 
 
 const Divisi = () => {
   return (
     <div
       id="MainContent"
-      className="mt-5 justify-content-center m-auto"
-      style={{width: '90%'}}
+      className="mt-5 p-5 m-auto"
+      style={{ backgroundColor: 'white' }}
     >
-      <div>
-        <h1 className="text-white justify-content-center">Divisi</h1>
-      </div>
+      <h1>Divisi</h1>
 
-      <Container className="text-white border">
-        <Row>
-          <Col md={4} xs={6}>
-            <div className="border d-flex">
-              <div>
-                <img
-                  className="m-lg-3 rounded-circle"
-                  src={Kominfo}
-                  alt=""
-                  width="100px"
-                />
-              </div>
-              <div className="border">
-                <h2>Kominfo</h2>
-                <p className="text-start text break">
-                  Mempublikasikan Himpunan Mahasiswa Program Studi Informatika
-                  dan berbagai acara yang diadakan oleh Himpunan Mahasiswa Prodi
-                  (HIMAPRO)
-                </p>
-                <button>Ingfo</button>
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-
-      <Container className="text-white border">
-        <Row>
-          <Col md={{ span: 4, offset: 8 }}>
-            <div className="border d-flex">
-              <div>
-                <h2>Humas</h2>
-                <p className="text-end">
+      <Container className='mt-4'>
+        <NavLink href="/kominfo" >
+          <Row className="mt-4 text-light" style={{backgroundColor: "#1c323d", borderRadius: '20px'}}>
+            <Col md={7} xs={6}>
+                <div className='d-flex'>
+                  <img src={Kominfo} alt="Kominfo" width="150px" height="150px" className='m-3 rounded-circle' />
+                  <div className="w-auto" style={{marginTop: 'auto', marginBottom: 'auto'}}>
+                    <h4>Kominfo</h4>
+                    <p className="mt-3">
+                      Mempublikasikan Himpunan Mahasiswa Program Studi Informatika
+                      dan berbagai acara yang diadakan oleh Himpunan Mahasiswa Prodi
+                      (HIMAPRO)
+                    </p>
+                  </div>
+                </div>
+            </Col>
+          </Row>
+        </NavLink>
+        <Row className="mt-4 text-light" style={{backgroundColor: "#1c323d", borderRadius: '20px'}}>
+          <Col md={{ span: 7, offset: 5}} >
+            <div className="d-flex">
+              <div className="w-auto" style={{marginTop: 'auto', marginBottom: 'auto'}}>
+                <h4>Humas</h4>
+                <p className="mt-3">
                   Menjadi penyambung hubungan antara setiap anggota HIMASTI
-                  dengan Civitas Del dan juga Masyaraka{" "}
+                  dengan Civitas Del dan juga Masyarakat
                 </p>
-                <button>Ingfo</button>
               </div>
-              <div>
-                <img
-                  className="m-lg-3 rounded-circle"
-                  src={Humas}
-                  alt=""
-                  width="100px"
-                  style={{
-                    height: "fit-content",
-                    transform: "translateY(20%)",
-                  }}
-                />
-              </div>
+              <img src={Humas} alt="Humas" width="150px" height="150px" className="m-3 rounded-circle" />
             </div>
           </Col>
         </Row>
-      </Container>
-      <Container className="text-white border w">
-        <Row>
-          <Col md={4} xs={6}>
-            <div className="border d-flex">
-              <div className="border">
-                <img
-                  className="m-lg-3 rounded-circle"
-                  src={Danus}
-                  alt=""
-                  width="100px"
-                  style={{
-                    height: "fit-content",
-                    transform: "translateY(50%)",
-                  }}
-                />
-              </div>
-              <div>
-                <h2> Dana dan Usaha</h2>
-                <p className="text-start">
+        <Row className="mt-4 text-light" style={{backgroundColor: "#1c323d", borderRadius: '20px'}}>
+          <Col md={7} xs={6}>
+            <div className='d-flex'>
+              <img src={Danus} alt="Danus" width="150px" height="150px" className='m-3 rounded-circle' />
+              <div className="w-auto" style={{marginTop: 'auto', marginBottom: 'auto'}}>
+                <h4>Dana dan Usaha</h4>
+                <p className="mt-3">
                   Sebagai sarana Himpunan Mahasiswa Sarjana Informatika
                   (HIMASTI) dalam menghasilkan dan menghimpun dana yang
                   dibutuhkan oleh himpunan untuk merealisasikan seluruh kegiatan
                   ataupun program kerja yang dimiliki himpunan.
                 </p>
-                <button>Ingfo</button>
               </div>
             </div>
           </Col>
         </Row>
-      </Container>
-
-      <Container className="text-white border">
-        <Row>
-          <Col md={{ span: 4, offset: 8 }}>
-            <div className="border d-flex">
-              <div className="border">
-                <h2>Pendidikan</h2>
-                <p className="text-end">
+        <Row className="mt-4 text-light" style={{backgroundColor: "#1c323d", borderRadius: '20px'}}>
+          <Col md={{ span: 7, offset: 5}} >
+            <div className="d-flex">
+              <div className="w-auto" style={{marginTop: 'auto', marginBottom: 'auto'}}>
+                <h4>Pendidikan</h4>
+                <p className="mt-3">
                   Menjadikan HIMASTI sebagai sarana yang mendukung kegiatan
                   akademik dan mengembangkan softskill mahasiswa sarjana
                   Informatika.
                 </p>
-                <button>Ingfo</button>
               </div>
-              <div
-                className="border"
-                style={{
-                  height: "fit-content",
-                  transform: "translateY(25%)",
-                }}
-              >
-                <img
-                  className="m-lg-3 rounded-circle justify-content-center"
-                  src={Pendidikan}
-                  alt=""
-                  width="100px"
-                />
-              </div>
+              <img src={Pendidikan} alt="Humas" width="150px" height="150px" className="m-3 rounded-circle" />
             </div>
           </Col>
         </Row>
-      </Container>
-      <Container className="text-white border">
-        <Row>
-          <Col md={4}>
-            <div className="border d-flex">
-              <div className="">
-                <img
-                  className="m-lg-3 rounded-circle mx-auto"
-                  src={Ristek}
-                  alt=""
-                  width="100px"
-                />
-              </div>
-
-              <div className="border">
-                <h2>Riset dan Teknologi</h2>
-                <p className="text-start">
+        <Row className="mt-4 text-light" style={{backgroundColor: "#1c323d", borderRadius: '20px'}}>
+          <Col md={7} xs={6}>
+            <div className='d-flex'>
+              <img src={Ristek2} alt="Danus" width="150px" height="150px" className='m-3 rounded-circle' />
+              <div className="w-auto" style={{marginTop: 'auto', marginBottom: 'auto'}}>
+                <h4>Riset dan Teknologi</h4>
+                <p className="mt-3">
                   Divisi Riset dan Teknologi bertujuan untuk menumbuhkan dan
                   meningkatkan jiwa kompetitif mahasiswa dan meningkatkan
                   softskill mahasiswa agar dapat menciptakan kualitas anggota
                   HIMASTI yang baik terlebih dalam bidang Informatika.
                 </p>
-                <button>Ingfo</button>
               </div>
             </div>
           </Col>
         </Row>
-      </Container>
-
-      <Container className="text-white border">
-        <Row>
-          <Col md={{ span: 4, offset: 8 }}>
-            <div className="border d-flex">
-              <div className="border">
-                <h2> Seni dan Minat</h2>
-                <p className="text-end">
+        <Row className="mt-4 text-light" style={{backgroundColor: "#1c323d", borderRadius: '20px'}}>
+          <Col md={{ span: 7, offset: 5}} >
+            <div className="d-flex">
+              <div className="w-auto" style={{marginTop: 'auto', marginBottom: 'auto'}}>
+                <h4>Minat dan Seni</h4>
+                <p className="mt-3">
                   Menjadikan HIMASTI sebagai tempat untuk berekspresi di bidang
                   seni dan juga sebagai wadah aspirasi serta minat mahasiswa
                 </p>
-                <button>Ingfo</button>
               </div>
-              <div
-                className="border"
-                style={{
-                  height: "fit-content",
-                  transform: "translateY(25%)",
-                }}
-              >
-                <img
-                  className="m-lg-3 rounded-circle justify-content-center"
-                  src={Seni}
-                  alt=""
-                  width="100px"
-                />
-              </div>
+              <img src={Pendidikan} alt="Humas" width="150px" height="150px" className="m-3 rounded-circle" />
             </div>
           </Col>
         </Row>

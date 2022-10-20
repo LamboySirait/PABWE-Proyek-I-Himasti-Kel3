@@ -9,15 +9,15 @@ const NavigationBar = () => {
         expand="lg"
         className="m-auto d-flex border"
         style={{
-          width: "auto",
           display: "flex",
+          height: '80px'
         }}
       >
         <Container>
           <NavbarBrand style={{ float: "left" }}>
-            <NavLink href="/" >
-              <img src={Logo} alt="Himasti" width="50px" />
-            </NavLink>
+            <NavLink href="/">
+              <img src={Logo} alt="Himasti" width="80px" />
+              </NavLink>
           </NavbarBrand>
           <Nav style={{marginLeft: '-19px'}}>
             <NavLink href="/">Himpunan Mahasiswa Informatika</NavLink>

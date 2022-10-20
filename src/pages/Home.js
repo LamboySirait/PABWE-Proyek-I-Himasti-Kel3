@@ -1,4 +1,4 @@
-import { Button, Card, CardGroup, Carousel, CarouselItem, NavLink, Nav } from "react-bootstrap";
+import { Card, CardGroup, Carousel, CarouselItem, NavLink } from "react-bootstrap";
 import Tanoto from "./../components/img/tanoto.jpg";
 import Logo from "./../components/img/logo/LogoHimasti.png";
 import Gambar from "./../components/img/Gambar1.jpg";
@@ -8,10 +8,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
 import Divisi from "./Divisi";
-import BPH from "./Bph";
 import Feedback from "./../components/img/icon/feedback.svg"
 import React, {useState} from "react";
 import GiveFeedback from "../components/GiveFeedback";
+import Graduation from "../components/img/berita/graduation.jpeg"
 
 
 const Home = () => {
@@ -46,53 +46,51 @@ const Home = () => {
         </Carousel>
       </div>
 
-      <div className="d-flex">
-        <div className="mt-5 m-auto" style={{ width: "90%" }}>
-          <h1 className="text-white" >
-            Tentang Himasti
-          </h1>
-          <div className="d-flex m-5" >
-            <img className="m-lg-3" src={Logo} alt="" width="300px" />
-            <div
-              className="text-white m-lg-3 d-flex"
-              style={{ alignItems: "center", backgroundImage: { Tanoto } }}
-            >
-              <p>
-                "Program Studi S1 Informatika merupakan salah satu dari 4
-                (empat) program studi di bawah Fakultas Teknik Informatika dan
-                Elektro di Institut Teknologi Del."
-              </p>
-            </div>
-          </div>
-          <div className="d-flex m-5 text-white" >
-            <h1 className="m-lg-5" style={{ fontSize: "100px" }}>
-              Visi
-            </h1>
-            <p className="m-lg-5">
-              Menjadi program Teknik Informatika yang unggul yang berperan dalam
-              menghasilkan dan memanfaatkan teknologi untuk mengembangkan
-              potensi lokal bagi kemajuan bangsa pada tahun 2023.
+      <div className=" mt-5 m-auto border" style={{ width: "90%" }}>
+        <h1 className="text-white" >
+          Tentang Himasti
+        </h1>
+        <div className="d-flex m-5" >
+          <img className="m-lg-3" src={Logo} alt="" width="300px" />
+          <div
+            className="text-white m-lg-3 d-flex"
+            style={{ alignItems: "center", backgroundImage: { Tanoto } }}
+          >
+            <p>
+              "Program Studi S1 Informatika merupakan salah satu dari 4
+              (empat) program studi di bawah Fakultas Teknik Informatika dan
+              Elektro di Institut Teknologi Del."
             </p>
           </div>
-          <div className="d-flex m-5 text-white text-start" >
-            <ul className="m-lg-5">
-              <li>
-                Menyelenggarakan pendidikan teknik informatika yang bermutu,
-                profesional dan diperhitungkan secara nasional.
-              </li>
-              <li>
-                Menyelenggarakan penelitian yang menghasilkan dan memanfaatkan
-                teknologi untuk mengembangkan potensi lokal.
-              </li>
-              <li>
-                Melakukan pengabdian kepada masyarakat dalam bidang teknik
-                informatika.
-              </li>
-            </ul>
-            <h1 className="m-lg-5" style={{ fontSize: "100px" }}>
-              Misi
-            </h1>
-          </div>
+        </div>
+        <div className="d-flex m-5 text-white" >
+          <h1 className="m-lg-5" style={{ fontSize: "100px" }}>
+            Visi
+          </h1>
+          <p className="m-lg-5">
+            Menjadi program Teknik Informatika yang unggul yang berperan dalam
+            menghasilkan dan memanfaatkan teknologi untuk mengembangkan
+            potensi lokal bagi kemajuan bangsa pada tahun 2023.
+          </p>
+        </div>
+        <div className="d-flex m-5 text-white text-start" >
+          <ul className="m-lg-5">
+            <li>
+              Menyelenggarakan pendidikan teknik informatika yang bermutu,
+              profesional dan diperhitungkan secara nasional.
+            </li>
+            <li>
+              Menyelenggarakan penelitian yang menghasilkan dan memanfaatkan
+              teknologi untuk mengembangkan potensi lokal.
+            </li>
+            <li>
+              Melakukan pengabdian kepada masyarakat dalam bidang teknik
+              informatika.
+            </li>
+          </ul>
+          <h1 className="m-lg-5" style={{ fontSize: "100px" }}>
+            Misi
+          </h1>
         </div>
       </div>
 
@@ -104,16 +102,7 @@ const Home = () => {
           style={{ width: "90%" }}
         >
           <div className="d-flex">
-            <h1 style={{ margin: "0" }}>Berita Himasti</h1>
-            <h5
-              style={{
-                marginTop: "auto",
-                marginBottom: "auto",
-                marginLeft: "auto",
-              }}
-            >
-              berita lainnya
-            </h5>
+            <h1 style={{margin: '0 auto'}}>Berita Himasti</h1>
           </div>
 
           <Swiper
@@ -126,63 +115,59 @@ const Home = () => {
             modules={[Navigation, Pagination]}
           >
             <CardGroup>
-              <SwiperSlide style={{ width: "auto" }}>
+              <SwiperSlide style={{ width: "30%" }}>
                 <Card className="text-dark">
-                  <Card.Img src={Logo} style={{ height: "200px" }} />
+                  <Card.Img src={Graduation} height="250px"/>
                   <Card.Body>
-                    <Card.Title>1. Pengangkatan Ketua Himasti</Card.Title>
-                    <Card.Text>Syalalalalallalla lalal alala lah</Card.Text>
+                    <Card.Title>Graduation Day Informatics 2022</Card.Title>
+                    {/* <Card.Text></Card.Text> */}
                   </Card.Body>
                   <Card.Footer>
-                    <small>Dari Anggota Himasti</small>
+                    <small>Lihat Selengkapnya</small>
                   </Card.Footer>
                 </Card>
               </SwiperSlide>
-              <SwiperSlide style={{ width: "auto" }}>
+              <SwiperSlide style={{ width: "30%" }}>
                 <Card className="text-dark">
-                  <Card.Img src={Logo} style={{ height: "200px" }} />
+                  <Card.Img src={Graduation} height="250px" />
                   <Card.Body>
-                    <Card.Title>2. Pengangkatan Ketua Himasti</Card.Title>
-                    <Card.Text>Syalalalalallalla lalal alala lah</Card.Text>
+                    <Card.Title>Graduation Day Informatics 2022</Card.Title>
                   </Card.Body>
                   <Card.Footer>
-                    <small>Dari Anggota Himasti</small>
+                    <small>Lihat Selengkapnya</small>
                   </Card.Footer>
                 </Card>
               </SwiperSlide>
-              <SwiperSlide style={{ width: "auto" }}>
+              <SwiperSlide style={{ width: "30%" }}>
                 <Card className="text-dark">
-                  <Card.Img src={Logo} style={{ height: "200px" }} />
+                  <Card.Img src={Graduation} height="250px" />
                   <Card.Body>
-                    <Card.Title>3. Pengangkatan Ketua Himasti</Card.Title>
-                    <Card.Text>Syalalalalallalla lalal alala lah</Card.Text>
+                    <Card.Title>Graduation Day Informatics 2022</Card.Title>
                   </Card.Body>
                   <Card.Footer>
-                    <small>Dari Anggota Himasti</small>
+                    <small>Lihat Selengkapnya</small>
                   </Card.Footer>
                 </Card>
               </SwiperSlide>
-              <SwiperSlide style={{ width: "auto" }}>
+              <SwiperSlide style={{ width: "30%" }}>
                 <Card className="text-dark">
-                  <Card.Img src={Logo} style={{ height: "200px" }} />
+                  <Card.Img src={Graduation} height="250px" />
                   <Card.Body>
-                    <Card.Title>4. Pengangkatan Ketua Himasti</Card.Title>
-                    <Card.Text>Syalalalalallalla lalal alala lah</Card.Text>
+                    <Card.Title>Graduation Day Informatics 2022</Card.Title>
                   </Card.Body>
                   <Card.Footer>
-                    <small>Dari Anggota Himasti</small>
+                    <small>Lihat Selengkapnya</small>
                   </Card.Footer>
                 </Card>
               </SwiperSlide>
-              <SwiperSlide style={{ width: "auto" }}>
+              <SwiperSlide style={{ width: "30%" }}>
                 <Card className="text-dark">
-                  <Card.Img src={Logo} style={{ height: "200px" }} />
+                  <Card.Img src={Graduation} height="250px" />
                   <Card.Body>
-                    <Card.Title>5. Pengangkatan Ketua Himasti</Card.Title>
-                    <Card.Text>Syalalalalallalla lalal alala lah</Card.Text>
+                    <Card.Title>Graduation Day Informatics 2022</Card.Title>
                   </Card.Body>
                   <Card.Footer>
-                    <small>Dari Anggota Himasti</small>
+                    <small>Lihat Selengkapnya</small>
                   </Card.Footer>
                 </Card>
               </SwiperSlide>

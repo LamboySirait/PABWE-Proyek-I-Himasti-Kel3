@@ -1,11 +1,9 @@
 /* ===== Footer.js ===== */
-#footer .bg-dark .container .row{
-    color: white;
-    height: 200px;
-}
 
-#footer .bg-white div {
+
+#footer #copyright div {
     height: 50px;
     width: 95%;
     margin: 0 auto;
+    color: white;
 }
