@@ -1,34 +1,38 @@
-import React from 'react'
-import { Navbar, Container, Nav, NavLink, NavbarBrand } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
-import Logo from './img/LogoHimasti.png'
+import React from "react";
+import { Navbar, Container, Nav, NavLink, NavbarBrand } from "react-bootstrap";
+import Logo from "./img/LogoHimasti.png";
 
 const NavigationBar = () => {
   return (
-    
-    <div style={{backgroundColor: '#FFFFFF'}} className='fixed-top'>
-      <Navbar expand='lg' className='m-auto d-flex border classes.appBarTransparent' 
-          style={{
-            width: 'auto',
-            display: 'flex'
-          }}>
-        <div className='opacity-100 border'>
-          <NavbarBrand style={{float: 'left'}}><img src={Logo} alt="" width='50px'/></NavbarBrand>
-          <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
-          <Navbar.Collapse id='responsive-navbar-navd'>
-            <Nav className='opacity-100 m-lg-auto' >
-              <Link to='/' >Beranda</Link>
-              <Link to='/tentang' >Tentang</Link>
-              <NavLink  id='ada' to='/berita'>Berita</NavLink>
-              <NavLink>Kegiatan</NavLink>
-              <NavLink>Prestasi</NavLink>
+    <div style={{ backgroundColor: "#FFFFFF" }} className="fixed-top">
+      <Navbar
+        expand="lg"
+        className="m-auto d-flex border classes.appBarTransparent"
+        style={{
+          width: "auto",
+          display: "flex",
+        }}
+      >
+        <Container>
+          <NavbarBrand style={{ float: "left" }}>
+            <NavLink href="/">
+              <img src={Logo} alt="Himasti" width="50px" />
+            </NavLink>
+          </NavbarBrand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="opacity-100 m-lg-auto">
+              <NavLink href="/">Beranda</NavLink>
+              <NavLink href="/tentang">Tentang</NavLink>
+              <NavLink href="/berita">Berita</NavLink>
+              <NavLink href="/kegiatan">Kegiatan</NavLink>
+              <NavLink href="/prestasi">Prestasi</NavLink>
             </Nav>
-          </Navbar.Collapse>  
-          
-        </div>
+          </Navbar.Collapse>
+        </Container>
       </Navbar>
     </div>
-  )
-}
+  );
+};
 
-export default NavigationBar
+export default NavigationBar;
