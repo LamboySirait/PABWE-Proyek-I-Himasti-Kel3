@@ -31,7 +31,7 @@ const Home = () => {
             style={{
               height: "90vh",
               backgroundImage: `url(${Gambar})`,
-              backgroundSize: "1600px 90vh",
+              backgroundSize: " 90vh",
               opacity: "50%",
             }}
           >
@@ -41,7 +41,7 @@ const Home = () => {
       </div>
 
       <div className="d-flex">
-        <div className="mt-5 m-auto" style={{ width: "1300px" }}>
+        <div className="mt-5 m-auto border" style={{ width: "1300px" }}>
           <h1 className="text-white" data-aos="fade-up">
             Tentang Himasti
           </h1>
@@ -52,7 +52,7 @@ const Home = () => {
               style={{ alignItems: "center", backgroundImage: { Tanoto } }}
             >
               <p>
-                "Program Studi S1 Teknik Informatika merupakan salah satu dari 4
+                "Program Studi S1 Informatika merupakan salah satu dari 4
                 (empat) program studi di bawah Fakultas Teknik Informatika dan
                 Elektro di Institut Teknologi Del."
               </p>
@@ -90,10 +90,10 @@ const Home = () => {
         </div>
       </div>
 
-      <div>
-        <Divisi />
-        <BPH />
-      </div>
+      {/* <div> */}
+      <Divisi />
+        {/* <BPH />
+      </div> */}
 
       <div className="d-flex" data-aos="fade-up">
         <div

@@ -15,18 +15,21 @@ const NavigationBar = () => {
       >
         <Container>
           <NavbarBrand style={{ float: "left" }}>
-            <NavLink href="/">
+            <NavLink href="/" >
               <img src={Logo} alt="Himasti" width="50px" />
             </NavLink>
           </NavbarBrand>
+          <Nav style={{marginLeft: '-19px'}}>
+            <NavLink href="/">Himpunan Mahasiswa Informatika</NavLink>
+          </Nav>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="opacity-100 m-lg-auto">
+            <Nav className="ms-auto">
               <NavLink href="/">Beranda</NavLink>
-              <NavLink href="/tentang">Tentang</NavLink>
-              <NavLink href="/berita">Berita</NavLink>
-              <NavLink href="/kegiatan">Kegiatan</NavLink>
-              <NavLink href="/prestasi">Prestasi</NavLink>
+              <NavLink href="/tentang" className="ms-3">Tentang</NavLink>
+              <NavLink href="/berita" className="ms-3">Berita</NavLink>
+              <NavLink href="/kegiatan" className="ms-3">Kegiatan</NavLink>
+              <NavLink href="/prestasi" className="ms-3">Prestasi</NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>

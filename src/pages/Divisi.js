@@ -6,7 +6,7 @@ const Divisi = () => {
     <div
       id="MainContent"
       className="mt-5 border justify-content-center m-auto"
-      style={{ height: "1500px", width: "1500px" }}
+      style={{ height: "1500px", width: "100%" }}
     >
       <div>
         <h1 className="text-white justify-content-center">Divisi</h1>
