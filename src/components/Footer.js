@@ -6,6 +6,9 @@ import Mail from "./img/mail.svg"
 import Call from "./img/call.svg"
 import Instagram from "./img/instagram.svg"
 import "./components.css"
+import Youtube from "./img/youtube.svg"
+import Facebook from "./img/facebook.svg"
+import Del from "./img/itdel.png"
 
 const Footer = () => {
   return (
@@ -22,22 +25,25 @@ const Footer = () => {
                 </div>
                 <div className='d-flex mt-1'>
                   <img src={Mail} alt="gambar" width='15px' />
-                  <p style={{fontSize: '13px', marginRight: 'auto', marginTop: 'auto', marginBottom: 'auto', marginLeft: '10px'}}>informatika@del.ac.id</p>
+                  <p style={{ fontSize: '13px', marginRight: 'auto', marginTop: 'auto', marginBottom: 'auto', marginLeft: '10px' }}>informatika@del.ac.id</p>
                 </div>
                 <div className='d-flex mt-1'>
                   <img src={Call} alt="gambar" width='15px' />
-                  <p style={{fontSize: '13px', marginRight: 'auto', marginTop: 'auto', marginBottom: 'auto', marginLeft: '10px'}}>+6281260388185</p>
+                  <p style={{ fontSize: '13px', marginRight: 'auto', marginTop: 'auto', marginBottom: 'auto', marginLeft: '10px' }}>+6281260388185</p>
                 </div>
               </div>
             </Col>
             <Col>
               <div className="mt-4 border">
-                <img src={Instagram} alt="" />
+                <h3 className="mb-4">Social Media</h3>
+                <img src={Instagram} alt="" width="30px" />
+                <img src={Youtube} alt="" width="30px" />
+                <img src={Facebook} alt="" width="30px" />
               </div>
             </Col>
             <Col>
-              <div>
-                <h3>Logo</h3>
+              <div style={{ marginTop: "25px" }}>
+                <img src={Del} alt="" width="150px" />
               </div>
             </Col>
           </Row>
