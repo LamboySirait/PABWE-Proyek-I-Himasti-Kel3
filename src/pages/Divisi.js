@@ -172,7 +172,10 @@ const Divisi = () => {
                   Menjadikan HIMASTI sebagai tempat untuk berekspresi di bidang
                   seni dan juga sebagai wadah aspirasi serta minat mahasiswa
                 </p>
-                <button>Ingfo</button>
+                <button         style={{
+          backgroundColor: isActive ? 'salmon' : '',
+          color: isActive ? 'white' : '',
+        }}>Ingfo</button>
               </div>
               <div
                 className="border"
