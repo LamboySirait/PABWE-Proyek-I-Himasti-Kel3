@@ -17,9 +17,7 @@ const NavigationBar = () => {
           <NavbarBrand style={{ float: "left" }}>
             <NavLink href="/">
               <img src={Logo} alt="Himasti" width="100px" />
-            <NavLink href="/" >
-              <img src={Logo} alt="Himasti" width="50px" />
-            </NavLink>
+              </NavLink>
           </NavbarBrand>
           <Nav style={{marginLeft: '-19px'}}>
             <NavLink href="/">Himpunan Mahasiswa Informatika</NavLink>
