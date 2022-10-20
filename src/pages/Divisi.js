@@ -1,12 +1,18 @@
 import { Row, Col, Container, Button } from "react-bootstrap";
-import Logo from "../components/img/LogoHimasti.png";
+import Kominfo from "../components/img/kominfo.webp";
+import Humas from "../components/img/sosial.jpg";
+import Danus from "../components/img/danausaha.png";
+import Pendidikan from "../components/img/pendidikan.png";
+import Ristek from "../components/img/teknologi.avif";
+import Seni from "../components/img/sosial.jpg";
+
 
 const Divisi = () => {
   return (
     <div
       id="MainContent"
       className="mt-5 border justify-content-center m-auto"
-      style={{ width: "80%" }}
+      style={{ height: "1500px", width: "100%" }}
     >
       <div>
         <h1 className="text-white justify-content-center">Divisi</h1>
@@ -19,7 +25,7 @@ const Divisi = () => {
               <div>
                 <img
                   className="m-lg-3 rounded-circle"
-                  src={Logo}
+                  src={Kominfo}
                   alt=""
                   width="100px"
                 />
@@ -53,7 +59,7 @@ const Divisi = () => {
               <div>
                 <img
                   className="m-lg-3 rounded-circle"
-                  src={Logo}
+                  src={Humas}
                   alt=""
                   width="100px"
                   style={{
@@ -73,7 +79,7 @@ const Divisi = () => {
               <div className="border">
                 <img
                   className="m-lg-3 rounded-circle"
-                  src={Logo}
+                  src={Danus}
                   alt=""
                   width="100px"
                   style={{
@@ -119,7 +125,7 @@ const Divisi = () => {
               >
                 <img
                   className="m-lg-3 rounded-circle justify-content-center"
-                  src={Logo}
+                  src={Pendidikan}
                   alt=""
                   width="100px"
                 />
@@ -135,7 +141,7 @@ const Divisi = () => {
               <div className="">
                 <img
                   className="m-lg-3 rounded-circle mx-auto"
-                  src={Logo}
+                  src={Ristek}
                   alt=""
                   width="100px"
                 />
@@ -177,7 +183,7 @@ const Divisi = () => {
               >
                 <img
                   className="m-lg-3 rounded-circle justify-content-center"
-                  src={Logo}
+                  src={Seni}
                   alt=""
                   width="100px"
                 />

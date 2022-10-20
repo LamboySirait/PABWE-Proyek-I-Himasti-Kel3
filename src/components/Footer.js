@@ -5,12 +5,15 @@ import Location from "./img/location.svg";
 import Mail from "./img/mail.svg"
 import Call from "./img/call.svg"
 import Instagram from "./img/instagram.svg"
+import Youtube from "./img/youtube.svg"
+import Facebook from "./img/facebook.svg"
+import Del from "./img/itdel.png"
 
 const Footer = () => {
   return (
     <div className="">
-      <div className="bg-dark text-white" style={{}}>
-        <Container style={{ width: "100%" }}>
+      <div className="bg-dark text-white border" style={{}}>
+        <Container className="border" style={{ width: "100%" }}>
           <Row style={{ height: "200px" }}>
             <Col>
               <div className="mt-4 border">
@@ -31,12 +34,15 @@ const Footer = () => {
             </Col>
             <Col>
               <div className="mt-4 border">
-                <img src={Instagram} alt="" />
+                <h3 className="mb-4">Social Media</h3>
+                <img src={Instagram} alt="" width="30px" />
+                <img src={Youtube} alt="" width="30px" />
+                <img src={Facebook} alt="" width="30px" />
               </div>
             </Col>
             <Col>
-              <div>
-                <h3>Logo</h3>
+              <div style={{ marginTop: "25px" }}>
+                <img src={Del} alt="" width="150px" />
               </div>
             </Col>
           </Row>
@@ -47,7 +53,7 @@ const Footer = () => {
         className="bg-white d-flex border"
         style={{ height: "50px", width: "auto" }}
       >
-        <div style={{ width: "1300px", margin: "0 auto" }} className="border">
+        <div style={{ width: "93%", margin: "0 auto" }} className="border">
           <p
             className="mx-auto"
             style={{

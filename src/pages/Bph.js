@@ -1,5 +1,8 @@
 import { Row, Col, Container, Button } from "react-bootstrap";
 import Logo from "../components/img/LogoHimasti.png";
+import Guntur from "./../components/img/Guntur.png"
+import Gabriel from "./../components/img/Gabriel.png"
+
 
 const Bph = () => {
   return (
@@ -15,13 +18,13 @@ const Bph = () => {
               {" "}
               <div className="border d-flex text-white justify-content-center ">
                 <div>
-                  <h2 className="text-justify">Wakil Ketua </h2>
+                  <h2 className="text-justify">Ketua</h2>
 
                   <img
-                    className="m-lg-3 rounded-circle"
-                    src={Logo}
+                    className="m-lg-3 border "
+                    src={Guntur}
                     alt=""
-                    width="200px"
+                    width="500px"
                   />
                   <h3>Guntur</h3>
                 </div>
@@ -31,12 +34,12 @@ const Bph = () => {
               {" "}
               <div className="border d-flex text-white justify-content-center ">
                 <div>
-                  <h2 className="text-justify">Ketua </h2>
+                  <h2 className="text-justify">Wakil Ketua</h2>
                   <img
-                    className="m-lg-3 rounded-circle"
-                    src={Logo}
+                    className="m-lg-3 border"
+                    src={Gabriel}
                     alt=""
-                    width="200px"
+                    width="500px"
                   />
                   <h3>Gabriel</h3>
                 </div>
