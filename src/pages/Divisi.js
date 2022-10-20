@@ -1,18 +1,18 @@
 import { Row, Col, Container, Button } from "react-bootstrap";
-import Kominfo from "../components/img/kominfo.webp";
-import Humas from "../components/img/sosial.jpg";
-import Danus from "../components/img/danausaha.png";
+import Logo from "../components/img/LogoHimasti.png";
 import Pendidikan from "../components/img/pendidikan.png";
-import Ristek from "../components/img/teknologi.avif";
-import Seni from "../components/img/sosial.jpg";
+import Ristek from "../components/img/riset.png";
+import Kominfo from "../components/img/minfo.png";
+import Humas from "../components/img/relation.png";
+import Danus from "../components/img/dana.png";
 
 
 const Divisi = () => {
   return (
     <div
       id="MainContent"
-      className="mt-5 justify-content-center m-auto"
-      style={{width: '90%'}}
+      className="mt-5 border justify-content-center m-auto"
+      style={{ height: "1500px", width: "1500px" }}
     >
       <div>
         <h1 className="text-white justify-content-center">Divisi</h1>
@@ -183,7 +183,7 @@ const Divisi = () => {
               >
                 <img
                   className="m-lg-3 rounded-circle justify-content-center"
-                  src={Seni}
+                  src={Logo}
                   alt=""
                   width="100px"
                 />

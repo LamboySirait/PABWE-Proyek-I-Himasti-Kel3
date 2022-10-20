@@ -1,6 +1,5 @@
 import { Col, Container, Image, Row } from "react-bootstrap";
 import Dian from "./../components/img/DivKominfo/Dian.png";
-import Amelia from "./../components/img/DivKominfo/Amelia.png"
 
 const DivKominfo = () => {
   return (
@@ -21,7 +20,7 @@ const DivKominfo = () => {
             </Col>
             <Col style={{position: 'relative'}}>
               <div>
-                <img src={Amelia} alt="Amelia" className="rounded-circle" style={{ width: "150px" }} />
+                <Image src={Dian} roundedCircle style={{ width: "150px" }} />
                 <h5>Amelia Agustina Hutajulu</h5>
                 <p>Wakil Ketua</p>
               </div>
@@ -30,21 +29,21 @@ const DivKominfo = () => {
           <Row className="mt-5">
             <Col>
               <div>
-                <Image src={Dian} roundedCircle style={{ width: "100px" }} />
+                <Image src={Cheilint} roundedCircle style={{ width: "100px" }} />
                 <h5>Cheilint Claudina Siallagan</h5>
                 <p>Anggota</p>
               </div>
             </Col>
             <Col>
               <div>
-                <Image src={Dian} roundedCircle style={{ width: "100px" }} />
+                <Image src={Theresia} roundedCircle style={{ width: "100px" }} />
                 <h5>Theresia Yolanda Laura Hutabarat</h5>
                 <p>Anggota</p>
               </div>
             </Col>
             <Col>
               <div>
-                <Image src={Dian} roundedCircle style={{ width: "100px" }} />
+                <Image src={Rutha} roundedCircle style={{ width: "100px" }} />
                 <h5>Ruth Aulya Silalahi</h5>
                 <p>Anggota</p>
               </div>
@@ -53,21 +52,21 @@ const DivKominfo = () => {
           <Row className="mt-3">
             <Col>
               <div>
-                <Image src={Dian} roundedCircle style={{ width: "100px" }} />
+                <Image src={Gerald} roundedCircle style={{ width: "100px" }} />
                 <h5>Gerald Nathanael</h5>
                 <p>Anggota</p>
               </div>
             </Col>
             <Col>
               <div>
-                <Image src={Dian} roundedCircle style={{ width: "100px" }} />
+                <Image src={Jay} roundedCircle style={{ width: "100px" }} />
                 <h5>Jayfline Elia Jaddy Hutagalung</h5>
                 <p>Anggota</p>
               </div>
             </Col>
             <Col>
               <div>
-                <Image src={Dian} roundedCircle style={{ width: "100px" }} />
+                <Image src={Dastin} roundedCircle style={{ width: "100px" }} />
                 <h5>Dastin Raynold Sirait</h5>
                 <p>Anggota</p>
               </div>
