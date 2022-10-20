@@ -10,8 +10,8 @@ const Footer = () => {
   return (
     <div className="">
       <div className="bg-dark text-white" style={{}}>
-        <Container style={{ width: "1300px" }}>
-          <Row style={{ height: "200px", border: "1px solid" }}>
+        <Container style={{ width: "100%" }}>
+          <Row style={{ height: "200px" }}>
             <Col>
               <div className="mt-4 border">
                 <h3 className="mb-4">Hubungi Kami</h3>
@@ -44,7 +44,7 @@ const Footer = () => {
       </div>
 
       <div
-        className="bg-white d-flex"
+        className="bg-white d-flex border"
         style={{ height: "50px", width: "auto" }}
       >
         <div style={{ width: "1300px", margin: "0 auto" }} className="border">

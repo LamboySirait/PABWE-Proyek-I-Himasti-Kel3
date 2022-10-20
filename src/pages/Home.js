@@ -90,15 +90,12 @@ const Home = () => {
         </div>
       </div>
 
-      <div>
-        <Divisi />
-        <BPH />
-      </div>
+      <Divisi />
 
       <div className="d-flex" data-aos="fade-up">
         <div
           className="text-white mt-5 m-auto border"
-          style={{ width: "1300px" }}
+          style={{ width: "80%" }}
         >
           <div className="d-flex">
             <h1 style={{ margin: "0" }}>Berita Himasti</h1>
@@ -114,7 +111,7 @@ const Home = () => {
           </div>
 
           <Swiper
-            style={{ marginTop: "40px", height: "400px", minWidth: "700px" }}
+            style={{ marginTop: "40px", height: "400px", minWidth: "100%" }}
             className="mySwiper"
             spaceBetween={50}
             slidesPerView={3}
