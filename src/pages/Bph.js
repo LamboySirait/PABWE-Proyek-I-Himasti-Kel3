@@ -1,7 +1,7 @@
 import { Row, Col, Container, Button } from "react-bootstrap";
-import Logo from "../components/img/LogoHimasti.png";
-import Guntur from "./../components/img/Guntur.png"
-import Gabriel from "./../components/img/Gabriel.png"
+import Logo from "../components/img/logo/LogoHimasti.png";
+import Guntur from "./../components/img/bph/Guntur.png"
+import Gabriel from "./../components/img/bph/Gabriel.png"
 
 
 const Bph = () => {

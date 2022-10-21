@@ -1,0 +1,10 @@
+#kominfo div {
+    color: white;
+}
+
+#kominfo div .tujuan {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}

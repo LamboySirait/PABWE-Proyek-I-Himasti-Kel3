@@ -1,8 +1,9 @@
-#footer .bg-dark {
-    color: white;
-}
+/* ===== Footer.js ===== */
 
-#footer .bg-white div {
+
+#footer #copyright div {
     height: 50px;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
+    color: white;
 }
