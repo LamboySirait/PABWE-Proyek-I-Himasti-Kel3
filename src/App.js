@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import { Routes, Route } from "react-router-dom";
 import Prestasi from "./pages/Prestasi";
 import DivKominfo from "./pages/DivKominfo";
+import Berita from "./pages/Berita"
 
 function App() {
   AOS.init();
@@ -20,6 +21,7 @@ function App() {
         <Route path="/tentang" element={<Main />} />
         <Route path="/prestasi" element={<Prestasi />} />
         <Route path="/kominfo" element={<DivKominfo />} />
+        <Route path="/berita/1" element={<Berita />} />
       </Routes>
 
       <Footer />

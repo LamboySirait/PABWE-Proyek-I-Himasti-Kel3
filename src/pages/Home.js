@@ -12,13 +12,14 @@ import Feedback from "./../components/img/icon/feedback.svg"
 import React, {useState} from "react";
 import GiveFeedback from "../components/GiveFeedback";
 import Graduation from "../components/img/berita/graduation.jpeg"
+import DepanITDEL from "../components/img/Depan_ITDEL.jpg"
 
 
 const Home = () => {
   const [showFeed, setShowFeed] = useState(false)
 
   return (
-    <div style={{ marginTop: "75px" }} >
+    <div style={{ marginTop: "75px", minWidth: "700px" }} >
       <div>
         <Carousel
           className="justify-content-center m-auto"
@@ -37,20 +38,30 @@ const Home = () => {
             style={{
               height: "90vh",
               backgroundImage: `url(${Gambar})`,
-              backgroundSize: "1550px",
+              backgroundSize: "100%",
               opacity: "50%",
             }}
           >
             <h1>ULALALALALALAL</h1>
           </CarouselItem>
+          <CarouselItem
+            style={{
+              backgroundImage: `url(${DepanITDEL})`,
+              height: "90vh",
+              objectFit: "cover",
+              backgroundSize: "80%",
+            }}
+          >
+
+          </CarouselItem>
         </Carousel>
       </div>
 
       <div className=" mt-5 m-auto" style={{ width: "90%" }}>
-        <h1 className="text-white" >
+        <h1 className="text-white" data-aos="fade-up" data-aos-duration="1000">
           Tentang Himasti
         </h1>
-        <div className="d-flex m-5" >
+        <div className="d-flex m-5" data-aos="fade-up" data-aos-duration="1000">
           <img className="m-lg-3" src={Logo} alt="" width="300px" />
           <div
             className="text-white m-lg-3 d-flex"
@@ -63,7 +74,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="d-flex m-5 text-white" >
+        <div className="d-flex m-5 text-white" data-aos="fade-up" data-aos-duration="1000">
           <h1 className="m-lg-5" style={{ fontSize: "100px" }}>
             Visi
           </h1>
@@ -73,7 +84,7 @@ const Home = () => {
             potensi lokal bagi kemajuan bangsa pada tahun 2023.
           </p>
         </div>
-        <div className="d-flex m-5 text-white text-start" >
+        <div className="d-flex m-5 text-white text-start" data-aos="fade-up" data-aos-duration="1000">
           <ul className="m-lg-5">
             <li>
               Menyelenggarakan pendidikan teknik informatika yang bermutu,
@@ -123,7 +134,9 @@ const Home = () => {
                     {/* <Card.Text></Card.Text> */}
                   </Card.Body>
                   <Card.Footer>
-                    <small>Lihat Selengkapnya</small>
+                    <NavLink href="/berita/1">
+                      <small>Lihat Selengkapnya</small>
+                    </NavLink>
                   </Card.Footer>
                 </Card>
               </SwiperSlide>
