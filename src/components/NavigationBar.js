@@ -16,7 +16,7 @@ const NavigationBar = () => {
         <Container>
           <NavbarBrand style={{ float: "left" }}>
             <NavLink href="/">
-              <img src={Logo2} alt="Himasti" width="100px" />
+              <img src={Logo2 } alt="Himasti" width="100px" />
               </NavLink>
           </NavbarBrand>
           <Nav style={{marginLeft: '-19px'}}>

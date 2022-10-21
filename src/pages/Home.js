@@ -134,7 +134,7 @@ const Home = () => {
                 <Card className="text-dark">
                   <Card.Img src={Graduation} style={{ height: "200px" }} />
                   <Card.Body >
-                    <Card.Title >Graduation Day Informatics 2022</Card.Title>
+                    <Card.Title >Graduation Day Informatics 17 18</Card.Title>
                     <Card.Text>Sabtu, 15 Oktober 2022, 44 orang mahasiswa/i Informatika di wisuda di Gedung serbaguna Del dengan meriah syalalala...</Card.Text>
                   </Card.Body>
                   <Card.Footer>
@@ -158,7 +158,7 @@ const Home = () => {
                 <Card className="text-dark">
                   <Card.Img src={Graduation} height="200px" />
                   <Card.Body >
-                    <Card.Title >Graduation Day Informatics 2022</Card.Title>
+                    <Card.Title >Graduation Day Informatics 17 18</Card.Title>
                     <Card.Text>Sabtu, 15 Oktober 2022, 44 orang mahasiswa/i Informatika di wisuda di Gedung serbaguna Del dengan meriah syalalala...</Card.Text>
                   </Card.Body>
                   <Card.Footer>
@@ -170,11 +170,16 @@ const Home = () => {
                 <Card className="text-dark">
                   <Card.Img src={Graduation} height="200px" />
                   <Card.Body>
-                    <Card.Title>Graduation Day Informatics 2022</Card.Title>
-                    <Card.Text className="border" >Sabtu, 15 Oktober 2022, 44 orang mahasiswa/i Informatika di wisuda di Gedung serbaguna Del dengan meriah syalalala...</Card.Text>
+                    <Card.Title>Graduation Day Informatics 17 18</Card.Title>
+                    <Card.Text className="border" style={{  width: "300px",height: "98px " }}>
+                   
+
+                        Ssyalalala...cscs
+                      
+                    </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-      
+      {/* style={{marginTop: 'auto', marginBottom: 'auto'}} */}
                     <small>Lihat Selengkapnya</small>
                   </Card.Footer>
                 </Card>
