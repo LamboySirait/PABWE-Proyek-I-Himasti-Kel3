@@ -20,7 +20,7 @@ const Footer = () => {
             <Col className="" >
               <div className="mt-4">
                 <h3 className="mb-4">Hubungi Kami</h3>
-                <div className='d-flex'>
+                <div className='d-flex border'>
                   <img src={Location} alt="gambar" width='15px' />
                   <p style={{fontSize: '13px', marginRight: 'auto', marginTop: 'auto', marginBottom: 'auto', marginLeft: '10px'}}>JL. P.I. Del, Sitoluama, Laguboti, Toba Samosir, Sumatera Utara</p>
                 </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Container, Nav, NavLink, NavbarBrand } from "react-bootstrap";
-import Logo from "./img/logo/LogoHimasti.png";
+import Logo2 from "./img/logo/LogoHimasti2.png";
 
 const NavigationBar = () => {
   return (
@@ -16,11 +16,11 @@ const NavigationBar = () => {
         <Container>
           <NavbarBrand style={{ float: "left" }}>
             <NavLink href="/">
-              <img src={Logo} alt="Himasti" width="80px" />
+              <img src={Logo2 } alt="Himasti" width="100px" />
               </NavLink>
           </NavbarBrand>
           <Nav style={{marginLeft: '-19px'}}>
-            <NavLink href="/">Himpunan Mahasiswa Informatika</NavLink>
+            <NavLink href="/" style={{fontFamily: 'Droid Sans Bold',fontSize:25}}>Himpunan Mahasiswa Informatika</NavLink>
           </Nav>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

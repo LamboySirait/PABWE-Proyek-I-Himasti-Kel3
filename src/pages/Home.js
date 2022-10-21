@@ -2,6 +2,9 @@ import { Card, CardGroup, Carousel, CarouselItem, NavLink } from "react-bootstra
 import Tanoto from "./../components/img/tanoto.jpg";
 import Logo from "./../components/img/logo/LogoHimasti.png";
 import Gambar from "./../components/img/Gambar1.jpg";
+import Daftar from "./../components/img/pendaftaran.jpg";
+import Wisuda from "./../components/img/wisuda.jpg";
+import Temu from "./../components/img/temu.jpeg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -21,14 +24,14 @@ const Home = () => {
     <div style={{ marginTop: "75px" }} >
       <div>
         <Carousel
-          className="justify-content-center m-auto"
+          className="justify-content-center "
           style={{ height: "90vh" }}
         >
           <CarouselItem
             style={{
               height: "90vh",
               backgroundImage: `url(${Tanoto})`,
-              opacity: "50%",
+              opacity: "100%",
             }}
           >
             <h1 className="text-white text-center">SYALALALALALA</h1>
@@ -117,10 +120,22 @@ const Home = () => {
             <CardGroup>
               <SwiperSlide style={{ width: "30%" }}>
                 <Card className="text-dark">
-                  <Card.Img src={Graduation} height="250px"/>
+                  <Card.Img src={Daftar} style={{ height: "200px" }} />
                   <Card.Body>
-                    <Card.Title>Graduation Day Informatics 2022</Card.Title>
-                    {/* <Card.Text></Card.Text> */}
+                    <Card.Title>Penerimaan Mahasiswa Baru Informatika</Card.Title>
+                    <Card.Text>IT Del kembali menerima angkatan baru mahasiswa program studi informatika tahun ajaran 2023/2024...</Card.Text>
+                  </Card.Body>
+                  <Card.Footer>
+                    <small>Baca Selengkapnya</small>
+                  </Card.Footer>
+                </Card>
+              </SwiperSlide>
+              <SwiperSlide style={{ width: "30%" }}>
+                <Card className="text-dark">
+                  <Card.Img src={Graduation} style={{ height: "200px" }} />
+                  <Card.Body >
+                    <Card.Title >Graduation Day Informatics 17 18</Card.Title>
+                    <Card.Text>Sabtu, 15 Oktober 2022, 44 orang mahasiswa/i Informatika di wisuda di Gedung serbaguna Del dengan meriah syalalala...</Card.Text>
                   </Card.Body>
                   <Card.Footer>
                     <small>Lihat Selengkapnya</small>
@@ -129,9 +144,10 @@ const Home = () => {
               </SwiperSlide>
               <SwiperSlide style={{ width: "30%" }}>
                 <Card className="text-dark">
-                  <Card.Img src={Graduation} height="250px" />
+                  <Card.Img src={Temu} style={{ height: "200px" }}  />
                   <Card.Body>
-                    <Card.Title>Graduation Day Informatics 2022</Card.Title>
+                    <Card.Title>Temu Ramah Informatika 20x22</Card.Title>
+                    <Card.Text>Sabtu, 15 Oktober 2022, 44 orang mahasiswa/i Informatika di wisuda di Gedung serbaguna Del dengan meriah syalalala...</Card.Text>
                   </Card.Body>
                   <Card.Footer>
                     <small>Lihat Selengkapnya</small>
@@ -140,9 +156,10 @@ const Home = () => {
               </SwiperSlide>
               <SwiperSlide style={{ width: "30%" }}>
                 <Card className="text-dark">
-                  <Card.Img src={Graduation} height="250px" />
-                  <Card.Body>
-                    <Card.Title>Graduation Day Informatics 2022</Card.Title>
+                  <Card.Img src={Graduation} height="200px" />
+                  <Card.Body >
+                    <Card.Title >Graduation Day Informatics 17 18</Card.Title>
+                    <Card.Text>Sabtu, 15 Oktober 2022, 44 orang mahasiswa/i Informatika di wisuda di Gedung serbaguna Del dengan meriah syalalala...</Card.Text>
                   </Card.Body>
                   <Card.Footer>
                     <small>Lihat Selengkapnya</small>
@@ -151,22 +168,18 @@ const Home = () => {
               </SwiperSlide>
               <SwiperSlide style={{ width: "30%" }}>
                 <Card className="text-dark">
-                  <Card.Img src={Graduation} height="250px" />
+                  <Card.Img src={Graduation} height="200px" />
                   <Card.Body>
-                    <Card.Title>Graduation Day Informatics 2022</Card.Title>
+                    <Card.Title>Graduation Day Informatics 17 18</Card.Title>
+                    <Card.Text className="border" style={{  width: "300px",height: "98px " }}>
+                   
+
+                        Ssyalalala...cscs
+                      
+                    </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <small>Lihat Selengkapnya</small>
-                  </Card.Footer>
-                </Card>
-              </SwiperSlide>
-              <SwiperSlide style={{ width: "30%" }}>
-                <Card className="text-dark">
-                  <Card.Img src={Graduation} height="250px" />
-                  <Card.Body>
-                    <Card.Title>Graduation Day Informatics 2022</Card.Title>
-                  </Card.Body>
-                  <Card.Footer>
+      {/* style={{marginTop: 'auto', marginBottom: 'auto'}} */}
                     <small>Lihat Selengkapnya</small>
                   </Card.Footer>
                 </Card>
