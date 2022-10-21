@@ -1,4 +1,11 @@
-import { Card, CardGroup, Carousel, CarouselItem, NavLink } from "react-bootstrap";
+import {
+  Button,
+  Card,
+  CardGroup,
+  Carousel,
+  CarouselItem,
+  NavLink,
+} from "react-bootstrap";
 import Tanoto from "./../components/img/tanoto.jpg";
 import Logo from "./../components/img/logo/LogoHimasti.png";
 import Gambar from "./../components/img/Gambar1.jpg";
@@ -11,19 +18,26 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
 import Divisi from "./Divisi";
-import Feedback from "./../components/img/icon/feedback.svg"
-import React, {useState} from "react";
+import Feedback from "./../components/img/icon/feedback.svg";
+import React, { useState } from "react";
 import GiveFeedback from "../components/GiveFeedback";
-import Graduation from "../components/img/berita/graduation.jpeg"
-
+import Graduation from "../components/img/berita/graduation.jpeg";
+import DepanITDEL from "../components/img/Depan_ITDEL.jpg";
+import GedungDel from "../components/img/GedungDel.jpg";
+import Gedung1 from "../components/img/gedung/Gedung1.jpg";
+import Gedung2 from "../components/img/gedung/Gedung2.jpg";
+import Gedung3 from "../components/img/gedung/Gedung3.jpg";
+import Gedung4 from "../components/img/gedung/Gedung4.jpg";
+import Pemandangan from "../components/img/gedung/Pemandangan.jpg";
 
 const Home = () => {
-  const [showFeed, setShowFeed] = useState(false)
+  const [showFeedback, setShowFeedback] = useState(false);
 
   return (
-    <div style={{ marginTop: "75px" }} >
+    <div style={{ marginTop: "75px", minWidth: "700px" }}>
       <div>
         <Carousel
+          fade
           className="justify-content-center "
           style={{ height: "90vh" }}
         >
@@ -31,7 +45,8 @@ const Home = () => {
             style={{
               height: "90vh",
               backgroundImage: `url(${Tanoto})`,
-              opacity: "100%",
+              backgroundSize: "100%",
+              opacity: "50%",
             }}
           >
             <h1 className="text-white text-center">SYALALALALALA</h1>
@@ -40,43 +55,72 @@ const Home = () => {
             style={{
               height: "90vh",
               backgroundImage: `url(${Gambar})`,
-              backgroundSize: "1550px",
+              backgroundSize: "100%",
               opacity: "50%",
             }}
           >
             <h1>ULALALALALALAL</h1>
           </CarouselItem>
+          <CarouselItem
+            style={{
+              backgroundImage: `url(${DepanITDEL})`,
+              height: "90vh",
+              backgroundSize: "100%",
+            }}
+          ></CarouselItem>
+          <CarouselItem
+            style={{
+              backgroundImage: `url(${Graduation})`,
+              height: "90vh",
+              backgroundSize: "100%",
+            }}
+          ></CarouselItem>
+          <CarouselItem
+            style={{
+              backgroundImage: `url(${Wisuda})`,
+              height: "90vh",
+              backgroundSize: "100%",
+            }}
+          ></CarouselItem>
         </Carousel>
       </div>
 
       <div className=" mt-5 m-auto" style={{ width: "90%" }}>
-        <h1 className="text-white" >
+        <h1 className="text-white" data-aos="fade-up" data-aos-duration="1000">
           Tentang Himasti
         </h1>
-        <div className="d-flex m-5" >
+        <div className="d-flex m-5" data-aos="fade-up" data-aos-duration="1000">
           <img className="m-lg-3" src={Logo} alt="" width="300px" />
           <div
             className="text-white m-lg-3 d-flex"
             style={{ alignItems: "center", backgroundImage: { Tanoto } }}
           >
             <p>
-              "Program Studi S1 Informatika merupakan salah satu dari 4
-              (empat) program studi di bawah Fakultas Teknik Informatika dan
-              Elektro di Institut Teknologi Del."
+              "Program Studi S1 Informatika merupakan salah satu dari 4 (empat)
+              program studi di bawah Fakultas Teknik Informatika dan Elektro di
+              Institut Teknologi Del."
             </p>
           </div>
         </div>
-        <div className="d-flex m-5 text-white" >
+        <div
+          className="d-flex m-5 text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <h1 className="m-lg-5" style={{ fontSize: "100px" }}>
             Visi
           </h1>
           <p className="m-lg-5">
             Menjadi program Teknik Informatika yang unggul yang berperan dalam
-            menghasilkan dan memanfaatkan teknologi untuk mengembangkan
-            potensi lokal bagi kemajuan bangsa pada tahun 2023.
+            menghasilkan dan memanfaatkan teknologi untuk mengembangkan potensi
+            lokal bagi kemajuan bangsa pada tahun 2023.
           </p>
         </div>
-        <div className="d-flex m-5 text-white text-start" >
+        <div
+          className="d-flex m-5 text-white text-start"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <ul className="m-lg-5">
             <li>
               Menyelenggarakan pendidikan teknik informatika yang bermutu,
@@ -99,13 +143,10 @@ const Home = () => {
 
       <Divisi />
 
-      <div className="d-flex" >
-        <div
-          className="text-white mt-5 m-auto border"
-          style={{ width: "90%" }}
-        >
+      <div className="d-flex " data-aos="zoom-in" data-aos-duration="1000">
+        <div className="text-white mt-5 m-auto" style={{ width: "90%" }}>
           <div className="d-flex">
-            <h1 style={{margin: '0 auto'}}>Berita Himasti</h1>
+            <h1 style={{ margin: "0 auto" }}>Berita Himasti</h1>
           </div>
 
           <Swiper
@@ -120,49 +161,35 @@ const Home = () => {
             <CardGroup>
               <SwiperSlide style={{ width: "30%" }}>
                 <Card className="text-dark">
-                  <Card.Img src={Daftar} style={{ height: "200px" }} />
-                  <Card.Body>
-                    <Card.Title>Penerimaan Mahasiswa Baru Informatika</Card.Title>
-                    <Card.Text>IT Del kembali menerima angkatan baru mahasiswa program studi informatika tahun ajaran 2023/2024...</Card.Text>
-                  </Card.Body>
-                  <Card.Footer>
-                    <small>Baca Selengkapnya</small>
-                  </Card.Footer>
-                </Card>
-              </SwiperSlide>
-              <SwiperSlide style={{ width: "30%" }}>
-                <Card className="text-dark">
                   <Card.Img src={Graduation} style={{ height: "200px" }} />
-                  <Card.Body >
-                    <Card.Title >Graduation Day Informatics 17 18</Card.Title>
-                    <Card.Text>Sabtu, 15 Oktober 2022, 44 orang mahasiswa/i Informatika di wisuda di Gedung serbaguna Del dengan meriah syalalala...</Card.Text>
-                  </Card.Body>
-                  <Card.Footer>
-                    <small>Lihat Selengkapnya</small>
-                  </Card.Footer>
-                </Card>
-              </SwiperSlide>
-              <SwiperSlide style={{ width: "30%" }}>
-                <Card className="text-dark">
-                  <Card.Img src={Temu} style={{ height: "200px" }}  />
                   <Card.Body>
-                    <Card.Title>Temu Ramah Informatika 20x22</Card.Title>
-                    <Card.Text>Sabtu, 15 Oktober 2022, 44 orang mahasiswa/i Informatika di wisuda di Gedung serbaguna Del dengan meriah syalalala...</Card.Text>
+                    <Card.Title>Graduation Day Informatics 17 18</Card.Title>
+                    <Card.Text>
+                      Sabtu, 15 Oktober 2022, 44 orang mahasiswa/i Informatika
+                      di wisuda di Gedung serbaguna Del dengan meriah.
+                    </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <small>Lihat Selengkapnya</small>
+                    <NavLink href="/berita/1">
+                      <small>Lihat Selengkapnya</small>
+                    </NavLink>
                   </Card.Footer>
                 </Card>
               </SwiperSlide>
               <SwiperSlide style={{ width: "30%" }}>
                 <Card className="text-dark">
-                  <Card.Img src={Graduation} height="200px" />
-                  <Card.Body >
-                    <Card.Title >Graduation Day Informatics 17 18</Card.Title>
-                    <Card.Text>Sabtu, 15 Oktober 2022, 44 orang mahasiswa/i Informatika di wisuda di Gedung serbaguna Del dengan meriah syalalala...</Card.Text>
+                  <Card.Img src={Temu} style={{ height: "200px" }} />
+                  <Card.Body>
+                    <Card.Title>Temu Ramah Informatika 20 22</Card.Title>
+                    <Card.Text>
+                      Sabtu, 15 Oktober 2022, 44 orang mahasiswa/i Informatika
+                      di wisuda di Gedung serbaguna Del dengan meriah.
+                    </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <small>Lihat Selengkapnya</small>
+                    <NavLink href="/berita/1">
+                      <small>Lihat Selengkapnya</small>
+                    </NavLink>
                   </Card.Footer>
                 </Card>
               </SwiperSlide>
@@ -171,15 +198,30 @@ const Home = () => {
                   <Card.Img src={Graduation} height="200px" />
                   <Card.Body>
                     <Card.Title>Graduation Day Informatics 17 18</Card.Title>
-                    <Card.Text className="border" style={{  width: "300px",height: "98px " }}>
-                   
-
-                        Ssyalalala...cscs
-                      
+                    <Card.Text>
+                      Sabtu, 15 Oktober 2022, 44 orang mahasiswa/i Informatika
+                      di wisuda di Gedung serbaguna Del dengan meriah.
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-      {/* style={{marginTop: 'auto', marginBottom: 'auto'}} */}
+                    <NavLink href="/berita/1">
+                      <small>Lihat Selengkapnya</small>
+                    </NavLink>
+                  </Card.Footer>
+                </Card>
+              </SwiperSlide>
+              <SwiperSlide style={{ width: "30%" }}>
+                <Card className="text-dark">
+                  <Card.Img src={Graduation} height="200px" />
+                  <Card.Body>
+                    <Card.Title>Graduation Day Informatics 17 18</Card.Title>
+                    <Card.Text>
+                      Sabtu, 15 Oktober 2022, 44 orang mahasiswa/i Informatika
+                      di wisuda di Gedung serbaguna Del dengan meriah.
+                    </Card.Text>
+                  </Card.Body>
+                  <Card.Footer>
+                    {/* style={{marginTop: 'auto', marginBottom: 'auto'}} */}
                     <small>Lihat Selengkapnya</small>
                   </Card.Footer>
                 </Card>
@@ -189,22 +231,40 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="d-flex">
-        <div
-          className="border m-auto"
-          style={{ height: "500px", width: "1300px" }}
-        ></div>
+      <div className="d-flex mt-5">
+        <div className="m-auto text-white" style={{ width: "90%" }}>
+          <h1 className="mb-3">Gallery di IT Del</h1>
+          <div className="row">
+            <div className="col-lg-4 col-md-12 mb-3 mb-lg-0">
+              <img src={Gedung1} className="w-100 shadow-1-strong rounded mb-4" alt="GD4" />
+
+              <img src={Gedung2} className="w-100 shadow-1-strong rounded mb-3" alt="Lapangan Hijau"/>
+            </div>
+
+            <div className="col-lg-4 mb-3 mb-lg-0">
+              <img src={Pemandangan} className="w-100 shadow-1-strong rounded mb-4" alt="Pemandangan dari OT" height={"90%"}/>
+            </div>
+
+            <div className="col-lg-4 mb-3 mb-lg-0">
+              <img src={Gedung3} className="w-100 shadow-1-strong rounded mb-4" alt="GD7" />
+
+              <img src={Gedung4} className="w-100 shadow-1-strong rounded mb-4" alt="Asrama Dantop" />
+            </div>
+          </div>
+        </div>
       </div>
-      
-      <NavLink onClick={() => setShowFeed(!showFeed)}>
-        <img src={Feedback} alt="" style={{position: 'fixed', bottom: '7%', right: '1%', zIndex: '5'}} />
+
+      <NavLink onClick={() => setShowFeedback(!showFeedback)}>
+        <img
+          src={Feedback}
+          alt=""
+          style={{ position: "fixed", bottom: "7%", right: "1%", zIndex: "5" }}
+        />
       </NavLink>
 
-      {showFeed ? <GiveFeedback /> : null}
-
-
+      {showFeedback ? <GiveFeedback /> : null}
     </div>
   );
-}
+};
 
 export default Home;

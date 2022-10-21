@@ -9,8 +9,6 @@ const NavigationBar = () => {
         expand="lg"
         className="m-auto d-flex border"
         style={{
-          display: "flex",
-          height: '80px'
         }}
       >
         <Container>
@@ -22,8 +20,8 @@ const NavigationBar = () => {
           <Nav style={{marginLeft: '-19px'}}>
             <NavLink href="/" style={{fontFamily: 'Droid Sans Bold',fontSize:25}}>Himpunan Mahasiswa Informatika</NavLink>
           </Nav>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
+          <Navbar.Toggle  />
+          <Navbar.Collapse >
             <Nav className="ms-auto">
               <NavLink href="/">Beranda</NavLink>
               <NavLink href="/tentang" className="ms-3">Tentang</NavLink>

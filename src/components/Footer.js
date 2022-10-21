@@ -13,16 +13,16 @@ import "./components.css"
 
 const Footer = () => {
   return (
-    <div id="footer">
+    <div id="footer" style={{minWidth: '700px'}}>
       <div className="bg-white " style={{height: '30vh'}}>
-        <Container className="container" style={{marginTop: "1vh"}}>
-          <Row className="row" style={{marginTop: '0 auto', marginBottom: ''}}>
-            <Col className="" >
+        <Container className="" style={{marginTop: "1vh"}}>
+          <Row >
+            <Col className="mt-4" >
               <div className="mt-4">
                 <h3 className="mb-4">Hubungi Kami</h3>
-                <div className='d-flex border'>
+                <div className='d-flex'>
                   <img src={Location} alt="gambar" width='15px' />
-                  <p style={{fontSize: '13px', marginRight: 'auto', marginTop: 'auto', marginBottom: 'auto', marginLeft: '10px'}}>JL. P.I. Del, Sitoluama, Laguboti, Toba Samosir, Sumatera Utara</p>
+                  <p className="text-start" style={{ fontSize: '13px', marginRight: 'auto', marginTop: 'auto', marginBottom: 'auto', marginLeft: '10px'}}>JL. P.I. Del, Sitoluama, Laguboti, Toba Samosir, Sumatera Utara</p>
                 </div>
                 <div className='d-flex mt-1'>
                   <img src={Mail} alt="gambar" width='15px' />
@@ -34,23 +34,23 @@ const Footer = () => {
                 </div>
               </div>
             </Col>
-            <Col>
-              <div className="mt-4">
+            <Col className="mt-4 mt-auto">
+              <a href="https://www.instagram.com/himasti_itdel">
                 <img src={Instagram} alt="Instagram Himasti" width="50px" />
-                <img src={Youtube} alt="" width="60px" />
-                <img src={Facebook} alt="" width="50px" />
-              </div>
+              </a>
+              <img src={Youtube} alt="" width="60px" />
+              <img src={Facebook} alt="" width="50px" />
             </Col>
-            <Col className="">
-                <img src={LogoHimasti} alt="" width="150px" className="mt-4 "/>
-                
+            <Col className="mt-2">
+                <img src={LogoHimasti} alt="HIMASTI" width="100px" className="mt-5"/>
+                <img src={Del} alt="IT DEL" width="100px" className="mt-5 "/>                
             </Col>
           </Row>
         </Container>
       </div>
 
       <div id="copyright"
-        className="bg-dark d-flex"
+        className="bg-dark d-flex h-auto"
       >
         <div>
           <p

@@ -1,5 +1,7 @@
-#kominfo div {
+/* === DivKominfo.js === */
+#kominfo {
     color: white;
+    margin-top: 100px;
 }
 
 #kominfo div .tujuan {
@@ -7,4 +9,10 @@
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    width: 70%;
+}
+
+#kominfo .anggota .container .row .col div img{
+    width: 150px;
+    
 }

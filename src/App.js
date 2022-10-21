@@ -13,6 +13,7 @@ import DivDanus from "./pages/DivDanus";
 import DivPendidikan from "./pages/DivPendidikan";
 import DivRistek from "./pages/DivRistek";
 import DivMani from "./pages/DivMani";
+import Berita from "./pages/Berita"
 
 function App() {
   AOS.init();
@@ -31,6 +32,7 @@ function App() {
         <Route path="/riset" element={<DivRistek />} />
         <Route path="/danus" element={<DivDanus />} />
         <Route path="/mani" element={<DivMani />} />
+        <Route path="/berita/1" element={<Berita />} />
       </Routes>
       <Footer />
     </div>
