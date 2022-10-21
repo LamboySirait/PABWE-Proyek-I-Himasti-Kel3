@@ -42,7 +42,7 @@ const Footer = () => {
               <img src={Facebook} alt="" width="50px" />
             </Col>
             <Col className="mt-2">
-                <img src={LogoHimasti} alt="HIMASTI" width="100px" className="mt-5 "/>
+                <img src={LogoHimasti} alt="HIMASTI" width="100px" className="mt-5"/>
                 <img src={Del} alt="IT DEL" width="100px" className="mt-5 "/>                
             </Col>
           </Row>

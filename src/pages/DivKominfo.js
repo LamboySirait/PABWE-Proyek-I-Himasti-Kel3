@@ -11,26 +11,22 @@ import "./pages.css"
 
 const DivKominfo = () => {
   return (
-    <div id="kominfo" style={{ marginTop: "100px" }}>
+    <div id="kominfo">
       <div className="mb-5" >
         <h1>Kominfo</h1>
-        <div style={{width: '1000px'}} className="tujuan">
+        <div className="tujuan border bg-white text-dark rounded-4">
           <h3 className="mb-4">Tujuan</h3>
-          <ul>
-            <li>
-              <small>
+          <ul style={{listStyleType: "none", paddingLeft: "0"}}>
+            <li style={{width: "1000px", marginLeft: "auto", marginRight: "auto"}}>
                 Memfasilitasi anggota Himpunan Mahasiswa Program Studi
                 Informatika untuk mendapatkan berbagai informasi mengenai
                 Kemahasiswaan Program Studi Informatika dan memberikan wadah
                 bagi pengembangan kreativitas anggota himpunan.
-              </small>
             </li>
-            <li>
-              <small>
+            <li stystyle={{width: "1000px", marginLeft: "auto", marginRight: "auto", marginTop: "50px"}}>
                 Mempublikasikan Himpunan Mahasiswa Program Studi
                 Informatika dan berbagai acara yang diadakan oleh Himpunan
                 Mahasiswa Prodi (HIMAPRO)
-              </small>
             </li>
             <li>
               <small>
@@ -43,20 +39,20 @@ const DivKominfo = () => {
           </ul>
         </div>
       </div>
-      <div className=" mb-5">
+      <div className="anggota mb-5">
         <h3>Anggota</h3>
-        <Container className="">
-          <Row className="mt-5">
-            <Col>
+        <Container className="container">
+          <Row className="row mt-5">
+            <Col className="col">
               <div>
-                <img src={Dian} className="rounded-circle" alt="Dian" style={{ width: "150px" }} />
+                <img src={Dian} className="rounded-circle" alt="Dian" />
                 <h5>Dian Jorgy Gultom</h5>
                 <p>Ketua</p>
               </div>
             </Col>
             <Col style={{position: 'relative'}}>
               <div>
-                <Image src={Amelia} roundedCircle style={{ width: "150px" }} />
+                <img src={Amelia} className="rounded-circle" alt="Amelia" />
                 <h5>Amelia Agustina Hutajulu</h5>
                 <p>Wakil Ketua</p>
               </div>
@@ -65,21 +61,21 @@ const DivKominfo = () => {
           <Row className="mt-5">
             <Col>
               <div>
-                <Image src={Cheilint} roundedCircle style={{ width: "100px" }} />
+                <Image src={Cheilint} roundedCircle />
                 <h5>Cheilint Claudina Siallagan</h5>
                 <p>Anggota</p>
               </div>
             </Col>
             <Col>
               <div>
-                <Image src={Theresia} roundedCircle style={{ width: "100px" }} />
+                <Image src={Theresia} roundedCircle  />
                 <h5>Theresia Yolanda Laura Hutabarat</h5>
                 <p>Anggota</p>
               </div>
             </Col>
             <Col>
               <div>
-                <Image src={Rutha} roundedCircle style={{ width: "100px" }} />
+                <Image src={Rutha} roundedCircle/>
                 <h5>Ruth Aulya Silalahi</h5>
                 <p>Anggota</p>
               </div>
@@ -88,21 +84,21 @@ const DivKominfo = () => {
           <Row className="mt-3">
             <Col>
               <div>
-                <Image src={Gerald} roundedCircle style={{ width: "100px" }} />
+                <Image src={Gerald} roundedCircle />
                 <h5>Gerald Nathanael</h5>
                 <p>Anggota</p>
               </div>
             </Col>
             <Col>
               <div>
-                <Image src={Jayfline} roundedCircle style={{ width: "100px" }} />
+                <Image src={Jayfline} roundedCircle />
                 <h5>Jayfline Elia Jaddy Hutagalung</h5>
                 <p>Anggota</p>
               </div>
             </Col>
             <Col>
               <div>
-                <Image src={Dastin} roundedCircle style={{ width: "100px" }} />
+                <Image src={Dastin} roundedCircle />
                 <h5>Dastin Raynold Sirait</h5>
                 <p>Anggota</p>
               </div>
