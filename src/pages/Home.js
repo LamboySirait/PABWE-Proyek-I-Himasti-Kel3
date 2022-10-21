@@ -46,7 +46,7 @@ const Home = () => {
         </Carousel>
       </div>
 
-      <div className=" mt-5 m-auto border" style={{ width: "90%" }}>
+      <div className=" mt-5 m-auto" style={{ width: "90%" }}>
         <h1 className="text-white" >
           Tentang Himasti
         </h1>

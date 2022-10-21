@@ -15,9 +15,9 @@ const Footer = () => {
   return (
     <div id="footer">
       <div className="bg-white " style={{height: '30vh'}}>
-        <Container className="container border" style={{marginTop: "1vh"}}>
-          <Row className="row border" style={{marginTop: '0 auto', marginBottom: ''}}>
-            <Col className="border" >
+        <Container className="container" style={{marginTop: "1vh"}}>
+          <Row className="row" style={{marginTop: '0 auto', marginBottom: ''}}>
+            <Col className="" >
               <div className="mt-4">
                 <h3 className="mb-4">Hubungi Kami</h3>
                 <div className='d-flex'>
@@ -35,14 +35,14 @@ const Footer = () => {
               </div>
             </Col>
             <Col>
-              <div className="mt-4 border">
+              <div className="mt-4">
                 <img src={Instagram} alt="Instagram Himasti" width="50px" />
                 <img src={Youtube} alt="" width="60px" />
                 <img src={Facebook} alt="" width="50px" />
               </div>
             </Col>
-            <Col className="border">
-                <img src={LogoHimasti} alt="" width="150px" className="mt-4 border"/>
+            <Col className="">
+                <img src={LogoHimasti} alt="" width="150px" className="mt-4 "/>
                 
             </Col>
           </Row>
