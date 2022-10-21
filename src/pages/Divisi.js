@@ -1,4 +1,4 @@
-import { Row, Col, Container, Button, NavLink } from "react-bootstrap";
+import { Row, Col, Container, NavLink } from "react-bootstrap";
 import Kominfo from "../components/img/logo/kominfo.webp";
 import Humas from "../components/img/logo/sosial.jpg";
 import Danus from "../components/img/logo/danausaha.png";
@@ -25,7 +25,7 @@ const Divisi = () => {
           <Row className="mt-4 text-light" style={{backgroundColor: "#1c323d", borderRadius: '20px'}}>
             <Col md={7} xs={6}>
                 <div className='d-flex'>
-                  <img src={Kominfo} alt="Kominfo" width="150px" height="150px" className='m-3 rounded-circle' />
+                  <img src={Kominfo2} alt="Kominfo" width="150px" height="150px" className='m-3 rounded-circle' />
                   <div className="w-auto" style={{marginTop: 'auto', marginBottom: 'auto'}}>
                     <h4>Kominfo</h4>
                     <p className="mt-3">
@@ -48,14 +48,14 @@ const Divisi = () => {
                   dengan Civitas Del dan juga Masyarakat
                 </p>
               </div>
-              <img src={Humas} alt="Humas" width="150px" height="150px" className="m-3 rounded-circle" />
+              <img src={Humas2} alt="Humas" width="150px" height="150px" className="m-3 rounded-circle" />
             </div>
           </Col>
         </Row>
         <Row className="mt-4 text-light" style={{backgroundColor: "#1c323d", borderRadius: '20px'}}>
           <Col md={7} xs={6}>
             <div className='d-flex'>
-              <img src={Danus} alt="Danus" width="150px" height="150px" className='m-3 rounded-circle' />
+              <img src={Danus2} alt="Danus" width="150px" height="150px" className='m-3 rounded-circle' />
               <div className="w-auto" style={{marginTop: 'auto', marginBottom: 'auto'}}>
                 <h4>Dana dan Usaha</h4>
                 <p className="mt-3">

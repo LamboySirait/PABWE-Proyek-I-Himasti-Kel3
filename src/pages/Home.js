@@ -4,6 +4,7 @@ import Logo from "./../components/img/logo/LogoHimasti.png";
 import Gambar from "./../components/img/Gambar1.jpg";
 import Daftar from "./../components/img/pendaftaran.jpg";
 import Wisuda from "./../components/img/wisuda.jpg";
+import Temu from "./../components/img/temu.jpeg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -20,10 +21,10 @@ const Home = () => {
   const [showFeed, setShowFeed] = useState(false)
 
   return (
-    <div style={{ marginTop: "50px" }} >
+    <div style={{ marginTop: "75px" }} >
       <div>
         <Carousel
-          className="justify-content-center m-auto"
+          className="justify-content-center "
           style={{ height: "90vh" }}
         >
           <CarouselItem
@@ -131,9 +132,10 @@ const Home = () => {
               </SwiperSlide>
               <SwiperSlide style={{ width: "30%" }}>
                 <Card className="text-dark">
-                  <Card.Img src={Graduation} height="250px" />
-                  <Card.Body>
-                    <Card.Title>Graduation Day Informatics 2022</Card.Title>
+                  <Card.Img src={Graduation} style={{ height: "200px" }} />
+                  <Card.Body >
+                    <Card.Title >Graduation Day Informatics 2022</Card.Title>
+                    <Card.Text>Sabtu, 15 Oktober 2022, 44 orang mahasiswa/i Informatika di wisuda di Gedung serbaguna Del dengan meriah syalalala...</Card.Text>
                   </Card.Body>
                   <Card.Footer>
                     <small>Lihat Selengkapnya</small>
@@ -142,9 +144,10 @@ const Home = () => {
               </SwiperSlide>
               <SwiperSlide style={{ width: "30%" }}>
                 <Card className="text-dark">
-                  <Card.Img src={Graduation} height="250px" />
+                  <Card.Img src={Temu} style={{ height: "200px" }}  />
                   <Card.Body>
-                    <Card.Title>Graduation Day Informatics 2022</Card.Title>
+                    <Card.Title>Temu Ramah Informatika 20x22</Card.Title>
+                    <Card.Text>Sabtu, 15 Oktober 2022, 44 orang mahasiswa/i Informatika di wisuda di Gedung serbaguna Del dengan meriah syalalala...</Card.Text>
                   </Card.Body>
                   <Card.Footer>
                     <small>Lihat Selengkapnya</small>
@@ -153,9 +156,10 @@ const Home = () => {
               </SwiperSlide>
               <SwiperSlide style={{ width: "30%" }}>
                 <Card className="text-dark">
-                  <Card.Img src={Graduation} height="250px" />
-                  <Card.Body>
-                    <Card.Title>Graduation Day Informatics 2022</Card.Title>
+                  <Card.Img src={Graduation} height="200px" />
+                  <Card.Body >
+                    <Card.Title >Graduation Day Informatics 2022</Card.Title>
+                    <Card.Text>Sabtu, 15 Oktober 2022, 44 orang mahasiswa/i Informatika di wisuda di Gedung serbaguna Del dengan meriah syalalala...</Card.Text>
                   </Card.Body>
                   <Card.Footer>
                     <small>Lihat Selengkapnya</small>
@@ -164,11 +168,13 @@ const Home = () => {
               </SwiperSlide>
               <SwiperSlide style={{ width: "30%" }}>
                 <Card className="text-dark">
-                  <Card.Img src={Graduation} height="250px" />
+                  <Card.Img src={Graduation} height="200px" />
                   <Card.Body>
                     <Card.Title>Graduation Day Informatics 2022</Card.Title>
+                    <Card.Text className="border" >Sabtu, 15 Oktober 2022, 44 orang mahasiswa/i Informatika di wisuda di Gedung serbaguna Del dengan meriah syalalala...</Card.Text>
                   </Card.Body>
                   <Card.Footer>
+      
                     <small>Lihat Selengkapnya</small>
                   </Card.Footer>
                 </Card>

@@ -2,8 +2,9 @@
 
 
 #footer #copyright div {
-    height: 50px;
+    height: auto;
     width: 95%;
     margin: 0 auto;
     color: white;
+    font-size: 80%;
 }
